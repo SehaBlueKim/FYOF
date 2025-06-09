@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FYOF-당신만의 향기를 찾아보세요</title>
+    <link rel="stylesheet" href="./css/index copy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- 섹션: 메인 비주얼 -->
+      <section class="main_visual">
+        <header>
+          <div class="header_con">
+            <!-- 로고 -->
+            <h1>
+              <a href="/">FYOF</a>
+            </h1>
+            <!-- GNB -->
+            <nav id="gnb">
+              <ul>
+                <li>
+                  <a href="/">소개</a>
+                </li>
+                <li>
+                  <a href="#">커뮤니티</a>
+                  <!-- 2차 메뉴 -->
+                  <div class="submenu_wrap">
+                    <ul class="submenu_community">
+                      <!-- <li><a href="#">이벤트</a></li> -->
+                      <li><a href="#">매거진</a></li>
+                      <li><a href="#">리뷰</a></li>
+                      <li><a href="#">질문</a></li>
+                      <li><a href="#">컬렉션</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">탐색</a>
+                  <!-- 2차 메뉴 -->
+                  <div class="submenu_wrap">
+                    <ul class="submenu_search">
+                      <li><a href="#">취향 분석</a></li>
+                      <li><a href="#">향수 찾기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">쇼핑</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- icons -->
+            <div class="icons">
+              <button type="button">
+                <img src="./img/search.svg" alt="search" />
+              </button>
+              <button type="button">
+                <img src="./img/user.svg" alt="" />
+              </button>
+              <button type="button">
+                <img src="./img/shopping_cart.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="main_visual_text">
+          <p>Find your own fragrance</p>
+          <span>당신만의 향기를 찾아보세요</span>
+          <div class="divider"></div>
+          <div class="scroll">
+            <img src="./img/scroll.svg" alt="스크롤" />
+          </div>
+          <span>scroll down</span>
+        </div>
+      </section>
+
+      <!-- 섹션 : 탐색하러 가기 -->
+      <section class="sec_test">
+        <div class="sec_test_img frame">
+          <img src="./img/test/test3.jpg" alt="취향 테스트" />
+        </div>
+        <div class="sec_test_text">
+          <h2>당신의 향기는 어떤 모습인가요?</h2>
+          <span
+            >몇가지 질문에 답하면 <br />
+            당신과 닮은 향을 만나게 될 거예요.</span
+          >
+          <a href="#">DISCOVER NOW</a>
+        </div>
+      </section>
+
+      <!-- 섹션 : 인기 향수 -->
+      <section class="sec_popular">
+        <div class="tab_menu_wrap">
+          <a href="#" class="frame">취향 분석</a>
+          <a href="#" class="frame">추천</a>
+          <a href="#" class="frame">후기</a>
+          <a href="#" class="frame">매거진</a>
+          <a href="#" class="frame">이벤트</a>
+        </div>
+        <h2>지금 뜨는 향수</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <!-- 인기 향수1 -->
+                <div class="best_card">
+                  <div class="best_card_img">
+                    <a href="#">
+                      <img
+                        src="./img/best/jomalone wood sage and sea salt.png"
+                        alt="조 말론 우드 세이지 앤 씨 솔트"
+                      />
+                      <div></div>
+                      <p>
+                        험준한 절벽에서 느껴지는 투박한<br />
+                        자연의 향기, 소금기를 머금은<br />
+                        신선한 바다공기
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.8</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>조 말론 우드 세이지 앤 씨 솔트</span>
+                      <span>&#8361;235,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수2 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img2">
+                    <a href="#">
+                      <img
+                        src="./img/best/diptyque ilio.png"
+                        alt="딥티크 일리오"
+                      />
+                      <div></div>
+                      <p>
+                        지중해 바위 해안가, 햇살에<br />
+                        익어가는 프리클리 페어(백년초)<br />
+                        향과 베르가못, 자스민의 향기.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.6</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>딥티크 일리오</span>
+                      <span>&#8361;241,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수3 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img3">
+                    <a href="#">
+                      <img
+                        src="./img/best/creed silver mountain water.jpg"
+                        alt="크리드 실버 마운틴 워터"
+                      />
+                      <div></div>
+                      <p>
+                        신선하고 차갑고 멘솔향이 나는<br />
+                        산악 공기의 상쾌한 바람이<br />
+                        불어오는 실버마운틴 워터는 스위스와 숨이 멎을듯한 알프스
+                        지역의 광활하고 깨끗한 아름다움에 생명을 불어넣습니다.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.6</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>크리드 실버 마운틴 워터</span>
+                      <span>&#8361;310,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수4 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img4">
+                    <a href="#">
+                      <img
+                        src="./img/best/loccitane verbena.png"
+                        alt="록시땅 버베나"
+                      />
+                      <div></div>
+                      <p>
+                        프로방스에서 유기농으로 재배되는<br />
+                        버베나 추출물이 매혹적인 향기로<br />
+                        상큼한 활력을 전해주며, 감각을 깨워 활기를 부여해 주어
+                        싱그러운 기분을 선사합니다.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.4</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>록시땅 버베나</span>
+                      <span>&#8361;80,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수5 -->
+                <div class="best_card">
+                  <div class="best_card_img">
+                    <a href="#">
+                      <img
+                        src="./img/best/maison margiela lazy sunday morning.png"
+                        alt="메종 마르지엘라 레이지 선데이 모닝"
+                        class="maison_margiela"
+                      />
+                      <div></div>
+                      <p>
+                        깨끗하게 세탁된 이불 위에 햇살이<br />
+                        내려앉은 일요일 아침, 갓 세탁한<br />
+                        시트에서 느껴지는 따뜻하고 포근한 향
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.7</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>메종 마르지엘라 레이지 선데이 모닝</span>
+                      <span>&#8361;75,000</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <!-- 인기 향수6 -->
+                <div class="best_card">
+                  <div class="best_card_img">
+                    <a href="#">
+                      <img
+                        src="./img/best/jomalone wood sage and sea salt.png"
+                        alt="조 말론 우드 세이지 앤 씨 솔트"
+                      />
+                      <div></div>
+                      <p>
+                        험준한 절벽에서 느껴지는 투박한<br />
+                        자연의 향기, 소금기를 머금은<br />
+                        신선한 바다공기
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.8</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>조 말론 우드 세이지 앤 씨 솔트</span>
+                      <span>&#8361;235,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수7 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img2">
+                    <a href="#">
+                      <img
+                        src="./img/best/diptyque ilio.png"
+                        alt="딥티크 일리오"
+                      />
+                      <div></div>
+                      <p>
+                        지중해 바위 해안가, 햇살에<br />
+                        익어가는 프리클리 페어(백년초)<br />
+                        향과 베르가못, 자스민의 향기.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.6</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>딥티크 일리오</span>
+                      <span>&#8361;241,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수8 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img3">
+                    <a href="#">
+                      <img
+                        src="./img/best/creed silver mountain water.jpg"
+                        alt="크리드 실버 마운틴 워터"
+                      />
+                      <div></div>
+                      <p>
+                        신선하고 차갑고 멘솔향이 나는<br />
+                        산악 공기의 상쾌한 바람이<br />
+                        불어오는 실버마운틴 워터는 스위스와 숨이 멎을듯한 알프스
+                        지역의 광활하고 깨끗한 아름다움에 생명을 불어넣습니다.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.6</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>크리드 실버 마운틴 워터</span>
+                      <span>&#8361;310,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수9 -->
+                <div class="best_card">
+                  <div class="best_card_img best_card_img4">
+                    <a href="#">
+                      <img
+                        src="./img/best/loccitane verbena.png"
+                        alt="록시땅 버베나"
+                      />
+                      <div></div>
+                      <p>
+                        프로방스에서 유기농으로 재배되는<br />
+                        버베나 추출물이 매혹적인 향기로<br />
+                        상큼한 활력을 전해주며, 감각을 깨워 활기를 부여해 주어
+                        싱그러운 기분을 선사합니다.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.4</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>록시땅 버베나</span>
+                      <span>&#8361;80,000</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- 인기 향수10 -->
+                <div class="best_card">
+                  <div class="best_card_img">
+                    <a href="#">
+                      <img
+                        src="./img/best/maison margiela lazy sunday morning.png"
+                        alt="메종 마르지엘라 레이지 선데이 모닝"
+                        class="maison_margiela"
+                      />
+                      <div></div>
+                      <p>
+                        깨끗하게 세탁된 이불 위에 햇살이<br />
+                        내려앉은 일요일 아침, 갓 세탁한<br />
+                        시트에서 느껴지는 따뜻하고 포근한 향
+                      </p>
+                    </a>
+                  </div>
+                  <div class="best_card_star">
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <img src="./img/star.svg" alt="별" class="star" />
+                    <span>4.7</span>
+                    <img
+                      src="./img/empty-heart.svg"
+                      alt="좋아요"
+                      class="heart"
+                    />
+                  </div>
+                  <a href="#">
+                    <div class="best_card_name">
+                      <span>메종 마르지엘라 레이지 선데이 모닝</span>
+                      <span>&#8361;75,000</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!-- 섹션 : 신상 향수 -->
+      <section class="sec_new">
+        <div class="new_wrap">
+          <div class="sec_new_img frame">
+            <a href="#">
+              <img src="./img/new/FLEUR DE PORTOFINO.jpg" alt="톰포드" />
+            </a>
+          </div>
+          <div class="new_text">
+            <h2>FLEUR DE PORTOFINO</h2>
+            <span
+              >바람이 닿는 곳마다 퍼지는 푸른 잔상 <br />
+              하늘과 바다가 맞닿은 곳에서 피어난 향기</span
+            >
+            <a href="#"><span>SHOP NOW</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션: 컬렉션 -->
+      <section class="sec_collection">
+        <h2><a href="#">FYOF 컬렉션</a></h2>
+        <div class="sec_collection_wrap">
+          <!-- 카드1 -->
+          <div class="sec_collection_card">
+            <a href="#">
+              <div class="sec_collection_card_img frame">
+                <img
+                  src="./img/collection/collection1.jpg"
+                  alt="컬렉션1"
+                  class="sec_collection_card_img1"
+                />
+              </div>
+              <p>코가 호강하는 향 베스트</p>
+              <span
+                >탑노트, 미들노트, 베이스노트, 지속력, 확산력, 바틀을 <br />
+                포함한 탁월한 향기를 선사하는 향수들로만 엄선했습니다.</span
+              >
+              <div class="sec_collection_card_user">
+                <div class="sec_collection_card_user_img">
+                  <img src="./img/collection/user1.png" alt="유저1" />
+                </div>
+                <span>향탑</span>
+                <img src="./img/empty-heart.svg" alt="좋아요" class="heart" />
+                <span>1,083</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 카드2 -->
+          <div class="sec_collection_card">
+            <a href="#">
+              <div class="sec_collection_card_img frame">
+                <img
+                  src="./img/collection/collection2.jpg"
+                  alt="컬렉션2"
+                  class="sec_collection_card_img2"
+                />
+              </div>
+              <p>숲에 머무르다</p>
+              <span>마치 숲에 머무르는 듯한 느낌을 주는 향기 컬렉션</span>
+              <div class="sec_collection_card_user">
+                <div class="sec_collection_card_user_img">
+                  <img src="./img/collection/user2.png" alt="유저2" />
+                </div>
+                <span>미스우디</span>
+                <img src="./img/empty-heart.svg" alt="좋아요" class="heart" />
+                <span>281</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 카드3 -->
+          <div class="sec_collection_card">
+            <a href="#">
+              <div class="sec_collection_card_img frame">
+                <img
+                  src="./img/collection/collection3-2.jpg"
+                  alt="컬렉션3"
+                  class="sec_collection_card_img3"
+                />
+              </div>
+              <p>젖은 공기 속으로</p>
+              <span>비 내리는 오후에 뿌리기 딱 좋은 향기</span>
+              <div class="sec_collection_card_user">
+                <div class="sec_collection_card_user_img">
+                  <img src="./img/collection/user3.png" alt="유저3" />
+                </div>
+                <span>프로피</span>
+                <img src="./img/empty-heart.svg" alt="좋아요" class="heart" />
+                <span>345</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션: 이벤트 배너 -->
+      <section class="sec_event">
+        <div class="sec_event_img">
+          <div class="sec_event_text">
+            <p>나와 닮은 향, 지금 테스트하고 샘플 받아가세요</p>
+            <span><a href="#">JOIN NOW</a></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션: 뉴스 -->
+      <section class="sec_news">
+        <h2>향으로 전하는 이야기</h2>
+        <div class="sec_news_wrap">
+          <a href="#" class="sec_news_left">
+            <div class="sec_news_left_img frame">
+              <img src="./img/news/penhaligons.png" alt="펜할리곤스" />
+            </div>
+            <p>펜할리곤스, 현대백화점 압구정 본점 신규 매장 오픈</p>
+            <span
+              >영국 왕실의 사랑을 받아온 향수 브랜드 펜할리곤스가 현대백화점
+              압구정 본점에 신규 매장을 <br />
+              오픈합니다. 펜할리곤스는 클래식한 브리티시 헤리티지와 독창적인
+              향의 스토리텔링을 ...</span
+            >
+            <span class="view_more">VIEW MORE</span>
+          </a>
+          <div class="sec_news_right">
+            <!-- 카드1 -->
+            <a href="#" class="sec_news_right_card">
+              <div class="sec_news_right_card_img frame">
+                <img
+                  src="./img/news/jomalone.jpg"
+                  alt="뉴스1"
+                  class="sec_news_right_card_img1"
+                />
+              </div>
+              <div class="sec_news_right_card_text">
+                <div>
+                  <p>조 말론 단독 기획전, 직원이 픽한 향수는?</p>
+                  <span
+                    >얼마나 좋으면 제 이름까지 여기서 따왔다니까요. <br />딱
+                    깔끔한 유자 껍질에 시원한 허브가 킥! <br />
+                    한정판이라 딴 데선 만나기도 힘드니, 올 여름 ...</span
+                  >
+                </div>
+                <span class="view_more">VIEW MORE</span>
+              </div>
+            </a>
+
+            <!-- 카드2 -->
+            <a href="#" class="sec_news_right_card">
+              <div class="sec_news_right_card_img frame">
+                <img
+                  src="./img/news/sandal wood.png"
+                  alt="뉴스2"
+                  class="sec_news_right_card_img2"
+                />
+              </div>
+              <div class="sec_news_right_card_text">
+                <div>
+                  <p>노트 가이드: 우유같은 포근함, 샌달 우드</p>
+                  <span
+                    >부드러운 향기와 하얀 심재가 특징인 샌달우드는 <br />
+                    뛰어난 안정 작용 덕분에 오래전부터 종교적인 <br />
+                    목적으로 많이 쓰였어요. 특히 아시아 전지역 ...</span
+                  >
+                </div>
+                <span class="view_more">VIEW MORE</span>
+              </div>
+            </a>
+
+            <!-- 카드3 -->
+            <a href="#" class="sec_news_right_card">
+              <div class="sec_news_right_card_img frame">
+                <img src="./img/news/ckone.png" alt="뉴스3" />
+              </div>
+              <div class="sec_news_right_card_text">
+                <div>
+                  <p>캘빈 클라인, CK 원 에센스 인텐스 200ml <br />출시</p>
+                  <span
+                    >캘빈클라인에서 청량한 시트러스 향기로 <br />
+                    사랑받았던 CK 원 에센스 인텐스를 200ml <br />
+                    대용량으로 새롭게 선보입니다. ...</span
+                  >
+                </div>
+                <span class="view_more">VIEW MORE</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션: 리뷰 -->
+      <section class="sec_review">
+        <h2>이런 리뷰를 찾고 있나요?</h2>
+        <div class="sec_review_wrap">
+          <!-- 카드1 -->
+          <a href="#" class="sec_review_card">
+            <div class="sec_review_top">
+              <div class="sec_review_top_img frame">
+                <img
+                  src="./img/review/by redo la tulipe.png"
+                  alt="리뷰 향수1"
+                  class="sec_review_top_img1"
+                />
+              </div>
+              <div class="sec_review_top_text">
+                <span>바이레도</span>
+                <p>라튤립</p>
+                <div>
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <span>4.7</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec_review_bottom">
+              <div class="sec_review_bottom_user">
+                <div class="sec_review_bottom_user_img frame">
+                  <img
+                    src="./img/review/review_user1.jpg"
+                    alt="유저1"
+                    class="sec_review_bottom_user_img1"
+                  />
+                </div>
+                <span>Flower Lover</span>
+              </div>
+              <span
+                >한 계절이 처음 맺는 꽃봉오리처럼 활기 넘치고 <br />
+
+                매력적인 느낌을 담은 향기예요. 튤립을 좋아해서 <br />
+                이름도 향도 취향에 잘 맞았어요. 뿌리자마자 처음엔 튤립과
+                프리지아 같은 꽃 향이 확 풍기는데 끝에는 약간 달큼한 향도
+                느껴지더라고요. 시간이 지날수록 상쾌한 숲 향도 풍기고요. ​</span
+              >
+            </div>
+          </a>
+
+          <!-- 카드2 -->
+          <a href="#" class="sec_review_card">
+            <div class="sec_review_top">
+              <div class="sec_review_top_img frame">
+                <img
+                  src="./img/review/daniel truth bombshell.png"
+                  alt="리뷰 향수2"
+                  class="sec_review_top_img1"
+                />
+              </div>
+              <div class="sec_review_top_text">
+                <span>다니엘 트루스</span>
+                <p>밤쉘</p>
+                <div>
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <span>4.5</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec_review_bottom">
+              <div class="sec_review_bottom_user">
+                <div class="sec_review_bottom_user_img frame">
+                  <img
+                    src="./img/review/review_user2.jpg"
+                    alt="유저2"
+                    class="sec_review_bottom_user_img2"
+                  />
+                </div>
+                <span>벤자민</span>
+              </div>
+              <span
+                >제가 느끼기에는 작약꽃의 향긋함과 살짝의 <br />
+                시트러스향도 느껴졌어요 ​전체적으로 보면 <br />
+                플라워향 섬유유연제 느낌!🌸 평소 섬유유연제 향을 좋아하시는
+                분이시라면 안 좋아할 수 없는 향이에요 ​</span
+              >
+            </div>
+          </a>
+
+          <!-- 카드3 -->
+          <a href="#" class="sec_review_card">
+            <div class="sec_review_top">
+              <div class="sec_review_top_img frame">
+                <img
+                  src="./img/review/dolce and gabbana light blue.jpg"
+                  alt=""
+                  class="sec_review_top_img3"
+                />
+              </div>
+              <div class="sec_review_top_text">
+                <span>돌체앤가바나</span>
+                <p>라이트 블루</p>
+                <div>
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <img src="./img/star.svg" alt="별" />
+                  <span>4.2</span>
+                </div>
+              </div>
+            </div>
+            <div class="sec_review_bottom">
+              <div class="sec_review_bottom_user">
+                <div class="sec_review_bottom_user_img frame">
+                  <img src="./img/review/review_user3.jpg" alt="유저1" />
+                </div>
+                <span>클라우디보이 </span>
+              </div>
+              <span
+                >처음 뿌리는 순간 달달상큼한 사과향, 시원청량한 <br />
+                레몬향이 주변에 퍼집니다. 살짝 덜 익은 듯한 <br />
+                상큼한 애플향과 주변을 시원하고 기분좋게 만들어 주는 레몬향의
+                조합이 무척이나 매력적이에요. 명품 니치향수 못지 않은 고급스럽고
+                시원한 향에 기분이 절로 좋아지네요.​</span
+              >
+            </div>
+          </a>
+        </div>
+      </section>
+      <div class="goToTop_btn"></div>
+    </main>
+
+    <!-- 풋터 -->
+    <footer>
+      <div class="footer_wrap">
+        <div>
+          <p>대표 김세하</p>
+          <p>사업자번호 127-88-12345</p>
+          <p>통신판매업 2025-경기안양-1234</p>
+          <p>주소 경기도 안양시 만안구 안양로 336</p>
+          <p>메일 fyof@fyof.com</p>
+          <p>전화 031-123-1234</p>
+        </div>
+        <div>
+          <p>이용약관</p>
+          <p>개인정보처리방침</p>
+          <p>&copy; FYOF. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
