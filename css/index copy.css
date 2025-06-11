@@ -333,6 +333,10 @@ h1 > a {
 }
 
 /* 지금 뜨는 향수 */
+.sec_popular_wrapper {
+  position: relative;
+}
+
 .best_wrap {
   width: 1300px;
   height: auto;
@@ -474,13 +478,22 @@ h1 > a {
 .sec_popular .swiper-button-prev {
   filter: grayscale(100%);
   opacity: 0.3;
-  z-index: 999;
+  position: absolute;
+  top: 40%;
 }
 
-.sec_popular .swiper-button-next::after {
-  position: absolute;
+.sec_popular .swiper-button-prev {
+  left: -30px;
+}
+
+.sec_popular .swiper-button-next {
   right: -30px;
 }
+
+/* .sec_popular .swiper-button-next::after {
+  position: absolute;
+  right: -30px;
+} */
 
 .sec_popular .swiper-button-next:hover,
 .sec_popular .swiper-button-prev:hover {
@@ -551,12 +564,17 @@ h1 > a {
 }
 
 /* 섹션: 컬렉션 */
+.sec_collection {
+  width: 100%;
+  height: auto;
+}
+
 .sec_collection_wrap {
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: auto;
   display: flex;
-  gap: 65px;
-  margin: 0 auto;
+  /* gap: 65px; */
+  /* margin: 0 auto; */
 }
 
 .sec_collection_card {
