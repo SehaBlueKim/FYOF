@@ -490,11 +490,6 @@ h1 > a {
   right: -30px;
 }
 
-/* .sec_popular .swiper-button-next::after {
-  position: absolute;
-  right: -30px;
-} */
-
 .sec_popular .swiper-button-next:hover,
 .sec_popular .swiper-button-prev:hover {
   opacity: 1;
@@ -573,8 +568,6 @@ h1 > a {
   width: 100%;
   height: auto;
   display: flex;
-  /* gap: 65px; */
-  /* margin: 0 auto; */
 }
 
 .sec_collection_card {
@@ -599,8 +592,13 @@ h1 > a {
 }
 
 .sec_collection_card_img2,
-.sec_collection_card_img3 {
+.sec_collection_card_img3,
+.sec_collection_card_img5 {
   height: 100%;
+}
+
+.sec_collection_card_img4 {
+  width: 100%;
 }
 
 .sec_collection_card p {
@@ -615,20 +613,27 @@ h1 > a {
   margin: 15px 0;
 }
 
-.sec_collection_card_user_img {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
 .sec_collection_card_user {
   display: flex;
   align-items: center;
 }
 
 .sec_collection_card_user_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
   margin-right: 10px;
+}
+
+.sec_collection_card_user4 {
+  height: 100%;
+  margin-left: -8px;
+}
+
+.sec_collection_card_user5 {
+  height: 100%;
+  margin-left: -6px;
 }
 
 .sec_collection_card_user > span {
@@ -641,6 +646,13 @@ h1 > a {
     contrast(87%);
   margin-left: auto;
   margin-right: 5px;
+}
+
+.sec_collection .swiper-wrapper div:nth-child(5) span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 /* 섹션: 이벤트 배너 */
