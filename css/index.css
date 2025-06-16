@@ -183,6 +183,10 @@ h1 > a {
   gap: 15px;
 }
 
+.icons > button:last-child {
+  display: none;
+}
+
 .icons > button {
   border: none;
   background-color: transparent;
@@ -333,6 +337,10 @@ h1 > a {
 }
 
 /* 지금 뜨는 향수 */
+.sec_popular_wrapper {
+  position: relative;
+}
+
 .best_wrap {
   width: 1300px;
   height: auto;
@@ -419,6 +427,41 @@ h1 > a {
   transform: translateX(-50%);
 }
 
+.best_card_img6 img {
+  width: 125%;
+  position: absolute;
+  top: 20px;
+  left: -22px;
+}
+
+.best_card_img7 img {
+  width: 110%;
+  position: absolute;
+  top: 40px;
+  left: -10px;
+}
+
+.best_card_img8 img {
+  width: 170%;
+  position: absolute;
+  top: -40px;
+  left: -80px;
+}
+
+.best_card_img9 img {
+  width: 200%;
+  position: absolute;
+  top: -100px;
+  left: -110px;
+}
+
+.best_card_img10 img {
+  width: 110%;
+  position: absolute;
+  top: 40px;
+  left: -13px;
+}
+
 .best_card_star {
   display: flex;
   align-items: center;
@@ -466,18 +509,31 @@ h1 > a {
   transform: translateX(10px);
 }
 
-.best_chevron_left {
-  position: absolute;
-  left: -50px;
-  top: 150px;
-  filter: invert(0.8);
+.sec_popular {
+  overflow: visible;
 }
 
-.best_chevron_right {
+.sec_popular .swiper-button-next,
+.sec_popular .swiper-button-prev {
+  filter: grayscale(100%);
+  opacity: 0.3;
   position: absolute;
-  right: -50px;
-  top: 150px;
-  filter: invert(0.8);
+  top: 40%;
+}
+
+.sec_popular .swiper-button-prev {
+  left: -30px;
+}
+
+.sec_popular .swiper-button-next {
+  right: -30px;
+}
+
+.sec_popular .swiper-button-next:hover,
+.sec_popular .swiper-button-prev:hover {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(49%) saturate(7344%)
+    hue-rotate(242deg) brightness(71%) contrast(97%);
 }
 
 /* 섹션 : 신상 */
@@ -542,12 +598,15 @@ h1 > a {
 }
 
 /* 섹션: 컬렉션 */
+.sec_collection {
+  width: 100%;
+  height: auto;
+}
+
 .sec_collection_wrap {
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: auto;
   display: flex;
-  gap: 65px;
-  margin: 0 auto;
 }
 
 .sec_collection_card {
@@ -572,8 +631,13 @@ h1 > a {
 }
 
 .sec_collection_card_img2,
-.sec_collection_card_img3 {
+.sec_collection_card_img3,
+.sec_collection_card_img5 {
   height: 100%;
+}
+
+.sec_collection_card_img4 {
+  width: 100%;
 }
 
 .sec_collection_card p {
@@ -588,20 +652,27 @@ h1 > a {
   margin: 15px 0;
 }
 
-.sec_collection_card_user_img {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
 .sec_collection_card_user {
   display: flex;
   align-items: center;
 }
 
 .sec_collection_card_user_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
   margin-right: 10px;
+}
+
+.sec_collection_card_user4 {
+  height: 100%;
+  margin-left: -8px;
+}
+
+.sec_collection_card_user5 {
+  height: 100%;
+  margin-left: -6px;
 }
 
 .sec_collection_card_user > span {
@@ -614,6 +685,13 @@ h1 > a {
     contrast(87%);
   margin-left: auto;
   margin-right: 5px;
+}
+
+.sec_collection .swiper-wrapper div:nth-child(5) span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 /* 섹션: 이벤트 배너 */
@@ -790,6 +868,11 @@ h1 > a {
   padding: 30px;
   gap: 20px;
   box-sizing: border-box;
+  transition-duration: 0.3s;
+}
+
+.sec_review_card:hover {
+  transform: translateY(-15px);
 }
 
 /* 섹션: 리뷰 - 탑 */
