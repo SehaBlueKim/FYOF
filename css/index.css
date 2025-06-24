@@ -598,19 +598,11 @@ h1 > a {
 }
 
 /* 섹션: 컬렉션 */
-.sec_collection {
-  width: 100%;
-  height: auto;
-}
 
+.sec_collection,
+#collection,
 .sec_collection_wrap {
   width: 100%;
-  height: auto;
-  display: flex;
-}
-
-.sec_collection_card {
-  width: 390px;
   height: auto;
 }
 
@@ -622,22 +614,13 @@ h1 > a {
   position: relative;
 }
 .sec_collection_card_img > img {
-  position: absolute;
-}
-
-.sec_collection_card_img1 {
   width: 100%;
-  top: -40%;
-}
-
-.sec_collection_card_img2,
-.sec_collection_card_img3,
-.sec_collection_card_img5 {
   height: 100%;
+  object-fit: cover;
 }
-
-.sec_collection_card_img4 {
-  width: 100%;
+#collection .swiper-slide {
+  width: 390px;
+  height: auto;
 }
 
 .sec_collection_card p {

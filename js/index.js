@@ -7,10 +7,10 @@ let mySwiper = new Swiper(".mySwiper", {
   loop: true,
 });
 
-let mySwiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 4,
+let collection = new Swiper("#collection", {
+  slidesPerView: 3,
   centeredSlides: true,
-  spaceBetween: 0,
+  spaceBetween: 40,
   grabCursor: true,
   pagination: {
     clickable: true,
