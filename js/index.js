@@ -1,18 +1,27 @@
-let mySwiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  slidesPerGroup: 5,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 1,
-  loop: true,
 });
 
-let collection = new Swiper("#collection", {
-  slidesPerView: 3,
+var collectionSwiper = new Swiper(".collectionSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
   centeredSlides: true,
-  spaceBetween: 40,
-  grabCursor: true,
   pagination: {
     clickable: true,
   },
+});
+
+const goToTop_btn = document.getElementById("goToTop_btn");
+
+goToTop_btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // 부드럽게 올라감
+  });
 });
