@@ -409,6 +409,28 @@ h1 > a {
   cursor: pointer;
 }
 
+/* goToTop 버튼 */
+#goToTop_btn {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid var(--mono-color2);
+  border-radius: 100px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+}
+
+#goToTop_btn::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../../../img/goToTop.svg) no-repeat center;
+  cursor: pointer;
+}
+
 /* 풋터 */
 footer {
   width: 100%;

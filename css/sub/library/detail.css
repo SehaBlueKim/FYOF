@@ -733,3 +733,402 @@ h1 > a {
 .hashtag_wrap + p {
   line-height: 27px;
 }
+
+/* 섹션: 추천 */
+.recommendation_wrap {
+  width: 1300px;
+  height: auto;
+  border: 1px solid var(--mono-color2);
+  border-radius: 12px;
+  background-color: var(--mono-color5);
+  padding: 50px 30px;
+  margin: 0 auto 50px;
+  box-sizing: border-box;
+}
+
+.recommendation_wrap > h2 {
+  font-size: var(--body-font-size);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recommendation_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best_card {
+  width: 224px;
+  height: auto;
+  border: 1px solid transparent;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.best_card_img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.best_card_img > a > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.best_card_img > a > p {
+  width: 90%;
+  font-size: 14px;
+  color: var(--mono-color1);
+  line-height: 25px;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.best_card_img:hover > a > div,
+.best_card_img:hover > a > p {
+  opacity: 1;
+}
+
+.best_card_img1 {
+  width: 165%;
+  position: absolute;
+  top: 10px;
+  left: -60px;
+}
+
+.best_card_img2 img {
+  width: 130%;
+  position: absolute;
+  top: 67px;
+  left: -30px;
+}
+
+.best_card_img3 img {
+  width: 190%;
+  position: absolute;
+  left: -80px;
+}
+
+.best_card_img4 img {
+  width: 115%;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.best_card_img5 {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+}
+
+.best_card_star {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 5px;
+}
+
+.star {
+  width: 11px;
+  height: 11px;
+  margin: 0 2px;
+}
+
+.best_card_star > span {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(50%) saturate(3849%)
+    hue-rotate(226deg) brightness(84%) contrast(97%);
+}
+
+.best_card_name {
+  line-height: 1.5;
+  padding: 15px 10px;
+  border-top: 1px solid var(--mono-color2);
+  border-bottom: 1px solid var(--mono-color2);
+  margin: 8px 0;
+}
+
+.best_card_name > span:nth-child(1) {
+  display: block;
+  height: 46px;
+}
+
+.best_card_name > span:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* goToTop 버튼 */
+#goToTop_btn {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid var(--mono-color2);
+  border-radius: 100px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+}
+
+#goToTop_btn::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../../../img/goToTop.svg) no-repeat center;
+  cursor: pointer;
+}
+
+/* 섹션: 유저 추천 */
+.user_rcmd_wrap {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+  padding: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--mono-color5);
+  margin-bottom: 100px;
+}
+
+.user_rcmd_wrap > h2 {
+  font-size: var(--body-font-size);
+  text-align: center;
+}
+
+.user_rcmd_box {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_card {
+  width: 353px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.user_card_top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.user_card_img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
+  position: relative;
+}
+
+.user_card_img1 {
+  height: 100%;
+  position: absolute;
+  left: -40px;
+}
+
+.user_card_img2,
+.user_card_img3 {
+  width: 100%;
+}
+
+.user_card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.user_card_info > span:first-child {
+  font-size: var(--body-font-size);
+}
+
+.user_card_info > span:nth-child(2) {
+  font-size: 14px;
+  color: var(--mono-color3);
+}
+
+.user_card_match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.user_card_match > span {
+  font-size: var(--title-font-size);
+  color: var(--main-color);
+}
+
+.user_card_match > .match_rate_bar {
+  width: 300px;
+  height: 10px;
+  border: 1px solid var(--mono-color2);
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+
+.match_rate_fill {
+  height: 100%;
+  border-radius: 100px;
+  background-color: var(--main-color);
+}
+
+.match_rate_fill1 {
+  width: 76%;
+}
+
+.match_rate_fill2 {
+  width: 93%;
+}
+
+.match_rate_fill3 {
+  width: 65%;
+}
+
+.user_card_top > p {
+  height: 46px;
+  text-align: center;
+  line-height: 23px;
+}
+
+.like_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like_item {
+  width: 90px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+  padding: 10px 0;
+}
+
+.like_item > div > img {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(75%) saturate(2317%)
+    hue-rotate(211deg) brightness(99%) contrast(103%);
+}
+
+.like_review {
+  width: 23px;
+}
+
+.follow_wrap > div:first-child {
+  width: 100%;
+  height: 1px;
+  background-color: var(--mono-color2);
+  margin: 0 auto;
+}
+
+.follow_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow_box > div:first-child,
+.follow_box > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(27px);
+}
+
+.follow_box > div:nth-child(2) {
+  width: 1px;
+  height: 60px;
+  background-color: var(--mono-color2);
+  margin-top: 15px;
+}
+
+.follow > span:first-child {
+  font-size: var(--body-font-size);
+  line-height: 27px;
+}
+
+.follow > span:last-child {
+  font-size: 14px;
+  color: var(--mono-color3);
+}
+
+/* 풋터 */
+footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid var(--mono-color2);
+  display: flex;
+  align-items: center;
+}
+
+.footer_wrap {
+  width: 1300px;
+  height: 40px;
+  font-size: 13px;
+  color: var(--mono-color3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.footer_wrap > div {
+  display: flex;
+  gap: 34px;
+}
