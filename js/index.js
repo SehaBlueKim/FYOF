@@ -17,6 +17,21 @@ var collectionSwiper = new Swiper(".collectionSwiper", {
   },
 });
 
+const hearts = document.querySelectorAll(".heart");
+
+hearts.forEach(function (heart) {
+  heart.addEventListener("click", function () {
+    if (heart.src.includes("empty-heart.svg")) {
+      heart.src = "./img/filled-heart.svg";
+      heart.style.filter =
+        "invert(8%) sepia(73%) saturate(6656%) hue-rotate(231deg) brightness(113%) contrast(92%)";
+    } else {
+      heart.src = "./img/empty-heart.svg";
+      heart.style.filter = "none";
+    }
+  });
+});
+
 const goToTop_btn = document.getElementById("goToTop_btn");
 
 goToTop_btn.addEventListener("click", function () {
