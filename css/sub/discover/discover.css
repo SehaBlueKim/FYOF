@@ -180,3 +180,235 @@ h1 > a {
   filter: brightness(0) saturate(100%) invert(7%) sepia(65%) saturate(7248%)
     hue-rotate(248deg) brightness(107%) contrast(110%);
 }
+
+/* 메인 이미지 */
+.main_img {
+  width: 100%;
+  height: 450px;
+}
+
+.main_img > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_img > div > img {
+  position: absolute;
+  top: -470px;
+}
+
+/* 타이틀 */
+.title {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+.title > div {
+  width: 1000px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--mono-color6);
+  padding: 0 10px;
+}
+
+.title input {
+  width: 100%;
+  height: 100%;
+  font-size: var(--default-font-size);
+  background-color: var(--mono-color6);
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: none;
+}
+
+.title > div > div {
+  cursor: pointer;
+}
+
+.title > div > div:hover {
+  filter: brightness(0) saturate(100%) invert(7%) sepia(65%) saturate(7248%)
+    hue-rotate(248deg) brightness(107%) contrast(110%);
+}
+
+/* discover 왼쪽 필터 */
+.discover {
+  width: 100%;
+  height: auto;
+}
+
+.discover_con {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.discover_left {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--mono-color2);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.discover_left_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discover_left_title > h2 {
+  font-size: var(--title-font-size);
+  font-weight: 500;
+}
+
+.discover_left_title > button {
+  font-size: var(--default-font-size);
+  background-color: var(--mono-color5);
+  border: 1px solid var(--mono-color2);
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+
+.discover_left_option_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.discover_left_option_name > div:first-child {
+  font-weight: 500;
+}
+
+.discover_left_option_name > div:nth-child(2) {
+  width: 25px;
+  height: 25px;
+}
+
+.discover_left_option_chevron {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.discover_left_option_name img {
+  width: 100%;
+  rotate: -90deg;
+}
+
+/* 옵션들 */
+
+.discover_left_option {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: max-height 0.3s ease;
+}
+
+.discover_left_option.open {
+  max-height: 500px; /* 충분히 큰 값 */
+  overflow: visible;
+}
+
+.discover_left_option_each {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.custom_radio {
+  display: none; /* 기본 라디오 숨김 */
+}
+
+.custom_label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom_label::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--mono-color2);
+  border-radius: 4px;
+}
+
+.discover_left_option_each_range {
+  width: 100%;
+}
+
+#price {
+  width: 100%;
+}
+
+.discover_left_option_each_input {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#input_box {
+  width: 100%;
+  font-size: var(--default-font-size);
+  padding: 10px 10px;
+  border: none;
+  background-color: var(--mono-color6);
+  outline: none;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--mono-color2);
+  margin-top: 20px;
+}
+
+/* discover 오른쪽 향수 */
+.discover_right {
+  width: calc(1300px - 370px);
+  margin-left: 60px;
+}
+
+.discover_right_align {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom_select_wrap {
+  position: relative; /* 중요: 자식 img 위치 기준이 됨 */
+  width: fit-content; /* 필요 시 고정폭 지정 가능 */
+}
+
+.custom_select {
+  appearance: none;
+  width: 100%;
+  padding: 10px 40px 10px 14px; /* 오른쪽 여백 확보 */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.custom_select_wrap img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg); /* 위아래 정중앙 + 회전 */
+  width: 16px;
+  height: 16px;
+  pointer-events: none; /* 클릭 방해 방지 */
+}

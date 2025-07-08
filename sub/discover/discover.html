@@ -67,11 +67,660 @@
     </header>
 
     <main>
-      <section class="main_image">
+      <section class="main_img">
         <div>
-          <img src="" alt="" />
+          <img src="../../img/discover/main_img.jpg" alt="메인 이미지" />
+        </div>
+      </section>
+
+      <section class="title">
+        <h2>향수 찾기</h2>
+        <div>
+          <input
+            type="text"
+            class="frame"
+            placeholder="검색어 및 키워드를 입력하세요"
+          />
+          <div>
+            <img src="../../img/search.svg" alt="검색" />
+          </div>
+        </div>
+      </section>
+
+      <section class="discover">
+        <div class="discover_con">
+          <!-- 좌측 필터 -->
+          <div class="discover_left">
+            <div class="discover_left_title">
+              <h2>필터</h2>
+              <button type="button">초기화</button>
+            </div>
+            <!-- 노트 -->
+            <div class="discover_left_option_name">
+              <div>노트</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>우드</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>플라워</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>시트러스</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>이끼</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>스파이시</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>코튼</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>과일</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>허브</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>스위트</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>워터</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>티</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>머스크 </span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>그리너리</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>파우더</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>기타</span></label
+                >
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 부향률 -->
+            <div class="discover_left_option_name">
+              <div>부향률</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>오 드 코롱</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>오 드 뚜왈렛</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>오 드 퍼퓸</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>퍼퓸</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>기타</span></label
+                >
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 제형 -->
+            <div class="discover_left_option_name">
+              <div>제형</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>오일</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>룸 스프레이</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>고체</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>핸드크림</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>샤워코롱</span></label
+                >
+              </div>
+
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>디퓨저</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>롤온</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>섬유 향수</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>기타</span></label
+                >
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 가격 -->
+            <div class="discover_left_option_name">
+              <div>가격</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each_range">
+                <label for="price"></label>
+                <input
+                  type="range"
+                  id="price"
+                  name="price"
+                  min="0"
+                  max="100"
+                  value="50"
+                />
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 용량 -->
+            <div class="discover_left_option_name">
+              <div>용량</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each_range">
+                <label for="price"></label>
+                <input
+                  type="range"
+                  id="price"
+                  name="price"
+                  min="0"
+                  max="100"
+                  value="50"
+                />
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 바틀 컬러 -->
+            <div class="discover_left_option_name">
+              <div>바틀 컬러</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>화이트</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>그레이</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>블랙</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>레드</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>오렌지</span></label
+                >
+              </div>
+
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>옐로우</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>그린</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>블루</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>네이비</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>퍼플</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>핑크</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>브라운</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>베이지</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>카키</span></label
+                >
+              </div>
+              <div class="discover_left_option_each">
+                <input
+                  type="checkbox"
+                  name="option"
+                  id="option"
+                  class="custom_radio"
+                />
+                <label for="option" class="custom_label frame"
+                  ><span>기타</span></label
+                >
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 브랜드 -->
+            <div class="discover_left_option_name">
+              <div>브랜드</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each_input">
+                <input
+                  type="textbox"
+                  name="input_box"
+                  id="input_box"
+                  class="input_box frame"
+                  placeholder="브랜드를 입력하세요"
+                />
+              </div>
+          </div>
+          <div class="divider"></div>
+          <!-- 키워드 -->
+            <div class="discover_left_option_name">
+              <div>키워드</div>
+              <div class="discover_left_option_chevron">
+                <img src="../../img/chevron-left.svg" alt="접기 버튼" />
+              </div>
+            </div>
+            <div class="discover_left_option">
+              <div class="discover_left_option_each_input">
+                <input
+                  type="textbox"
+                  name="input_box"
+                  id="input_box"
+                  class="input_box frame"
+                  placeholder="키워드를 입력하세요"
+                />
+              </div>
+          </div>
+        </div>
+        <!-- 오른쪽 향수 -->
+        <div class="discover_right">
+          <div class="discover_right_align">
+            <span>전체 1,223개</span>
+            <div class="custom_select_wrap">
+              <select name="custom_select" class="custom_select">
+                <option value="popular">인기순</option>
+                <option value="new">신상품순</option>
+                <option value="review">리뷰많은순</option>
+                <option value="priceLowToHigh">가격낮은순</option>
+                <option value="priceHighToLow">가격높은순</option>
+              </select>
+              <img src="../../img/chevron-left.svg" alt="펼치기">
+            </div>
+          </div>
+          <div class="discover_right_con">
+          </div>
         </div>
       </section>
     </main>
+    <script src="../../js/sub/discover/discover.js"></script>
   </body>
 </html>
