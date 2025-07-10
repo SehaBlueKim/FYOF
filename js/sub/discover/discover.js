@@ -51,6 +51,11 @@ checkbox.addEventListener("change", function () {
   const enabled = this.checked;
   priceMin.disabled = !enabled;
   priceMax.disabled = !enabled;
+
+  if (!enabled) {
+    priceMin.value = "";
+    priceMax.value = "";
+  }
 });
 
 // 용량 체크시 input 활성화
@@ -62,4 +67,9 @@ checkbox2.addEventListener("change", function () {
   const enabled = this.checked;
   capacityMin.disabled = !enabled;
   capacityMax.disabled = !enabled;
+
+  if (!enabled) {
+    capacityMin.value = "";
+    capacityMax.value = "";
+  }
 });

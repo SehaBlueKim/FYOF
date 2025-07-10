@@ -300,6 +300,10 @@ h1 > a {
   background-color: var(--mono-color5);
   border: 1px solid var(--mono-color2);
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .summary_right_img {
@@ -424,6 +428,7 @@ h1 > a {
   box-sizing: border-box;
   border: 1px solid var(--mono-color2);
   border-radius: 100px;
+  cursor: default;
 }
 
 .hashtag_wrap {
