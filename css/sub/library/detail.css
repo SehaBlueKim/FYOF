@@ -366,11 +366,18 @@ h1 > a {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+  position: relative;
 }
 
 .detail_left_icon > img {
   height: 35px;
   filter: invert(100%);
+}
+
+.detail_left_lasting {
+  position: absolute;
+  top: 7px;
+  right: 7px;
 }
 
 .detail_left_box > div:nth-child(2) {
@@ -1039,6 +1046,34 @@ h1 > a {
 
 .match_rate_fill3 {
   width: 65%;
+}
+
+.followBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.followBtn:hover {
+  cursor: pointer;
+}
+
+.followBtn > div {
+  width: 20px;
+  height: 20px;
+}
+
+.followBtn img {
+  width: 100%;
+  filter: none;
+}
+
+.followBtn span {
+  font-size: 14px;
+  color: var(--mono-color1);
 }
 
 .user_card_top > p {
