@@ -926,6 +926,114 @@ h1 > a {
   cursor: pointer;
 }
 
+/* 섹션: 중고 향수 */
+.secondHand_wrap {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto;
+
+  background-color: var(--mono-color5);
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.secondHand_con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.secondHand_card {
+  width: 280px;
+  height: 200px;
+}
+
+.secondHand_wrap > h2 {
+  font-size: var(--body-font-size);
+  margin-bottom: 70px;
+}
+
+.secondHand_card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+}
+
+.secondHand_card_top > div {
+  width: 280px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  position: relative;
+}
+
+.secondHand_card_top img {
+  width: 100%;
+  position: relative;
+  top: -150px;
+}
+
+.secondHand_card_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.secondHand_card_bottom > div:first-child > p {
+  font-size: var(--body-font-size);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.secondHand_volume {
+  display: flex;
+  align-items: center;
+}
+
+.secondHand_volume > div {
+  margin-right: 5px;
+}
+
+.secondHand_volume > p {
+  font-size: 14px;
+  color: var(--mono-color5);
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 14px;
+  margin-left: auto;
+}
+
+.secondHand_card_bottom > span {
+  font-size: var(--body-font-size);
+  color: var(--main-color);
+}
+
+.secondHand_seller {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secondHand_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.secondHand_img > img {
+  width: 100%;
+}
+
 /* 섹션: 유저 추천 */
 .user_rcmd_wrap {
   width: 1300px;
@@ -1068,10 +1176,10 @@ h1 > a {
 
 .followBtn img {
   width: 100%;
-  filter: none;
+  filter: invert(1);
 }
 
-.followBtn span {
+.followText {
   font-size: 14px;
   color: var(--mono-color1);
 }
