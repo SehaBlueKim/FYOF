@@ -291,7 +291,7 @@ h1 > a {
 
 .summary_icons {
   display: flex;
-  gap: 34px;
+  gap: 25px;
 }
 
 .summary_icons > button {
@@ -935,7 +935,7 @@ h1 > a {
   background-color: var(--mono-color5);
   border: 1px solid var(--mono-color2);
   border-radius: 14px;
-  padding: 50px 30px;
+  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -943,23 +943,13 @@ h1 > a {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   margin: 0 auto;
 }
 
 .secondHand_card {
-  width: 280px;
-  height: 200px;
-}
-
-.secondHand_wrap > h2 {
-  font-size: var(--body-font-size);
-  margin-bottom: 70px;
-}
-
-.secondHand_card {
-  width: fit-content;
+  width: 270px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -967,24 +957,72 @@ h1 > a {
   border-radius: 14px;
 }
 
+.secondHand_wrap > h2 {
+  font-size: var(--body-font-size);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 .secondHand_card_top > div {
-  width: 280px;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   border-radius: 14px 14px 0 0;
   position: relative;
 }
 
-.secondHand_card_top img {
-  width: 100%;
+.secondHand_card_top > div {
   position: relative;
+}
+
+.secondHand_card_top > div > img {
+  width: 100%;
+}
+
+.secondHand_card_img1 > img {
+  position: absolute;
   top: -150px;
+}
+
+.secondHand_card_img2 > img {
+  position: absolute;
+  top: -50px;
+}
+
+.secondHand_card_img3 > img {
+  position: absolute;
+  top: -60px;
+}
+
+.secondHand_card_img4 > img {
+  position: absolute;
+  top: -30px;
+}
+
+.secondHand_card_top_hearts {
+  width: 40px;
+  height: 40px;
+  background-color: var(--mono-color1);
+  border-radius: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondHand_card_top_heart {
+  width: 24px;
+  height: 24px;
 }
 
 .secondHand_card_bottom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   padding: 30px;
 }
 
@@ -999,7 +1037,7 @@ h1 > a {
   align-items: center;
 }
 
-.secondHand_volume > div {
+.secondHand_img2 {
   margin-right: 5px;
 }
 
@@ -1023,15 +1061,46 @@ h1 > a {
   gap: 10px;
 }
 
-.secondHand_img {
+.secondHand_seller_img {
   width: 40px;
   height: 40px;
   border-radius: 100px;
   overflow: hidden;
+  position: relative;
 }
 
-.secondHand_img > img {
+.secondHand_seller_img > img {
   width: 100%;
+}
+
+.secondHand_seller_img2 > img {
+  position: absolute;
+  top: -8px;
+}
+
+.secondHand_seller_img3 > img,
+.secondHand_seller_img4 > img {
+  height: 100%;
+}
+
+.secondHand_shopping_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--main-color);
+  padding: 5px 0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.secondHand_shopping_cart > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(7%)
+    hue-rotate(111deg) brightness(103%) contrast(96%);
+}
+
+.secondHand_shopping_cart > span {
+  color: var(--mono-color1);
 }
 
 /* 섹션: 유저 추천 */

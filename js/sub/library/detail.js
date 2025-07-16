@@ -1,4 +1,25 @@
-// 좋아요
+// 장바구니 버튼
+const cartBtn = document.querySelectorAll(".secondHand_shopping_cart");
+
+cartBtn.forEach((btn) => {
+  const cartImg = btn.querySelector("img");
+  const cartText = btn.querySelector("span");
+
+  btn.addEventListener("click", function () {
+    if (cartImg.src.includes("shopping_cart.svg")) {
+      cartImg.src = "/img/discover/check.svg";
+      cartImg.style.filter =
+        "filter: brightness(0) saturate(100%) invert(15%) sepia(83%) saturate(3238%) hue-rotate(224deg) brightness(92%) contrast(105%)";
+      cartText.style.color = "var(--mono-color4)";
+      btn.style.backgroundColor = "var(--mono-color2)";
+    } else {
+      cartImg.src = "/img/shopping_cart.svg";
+      btn.style.backgroundColor = "";
+    }
+  });
+});
+
+// 향수 좋아요 버튼
 const heartBtn = document.querySelector(".heartBtn");
 
 heartBtn.addEventListener("click", function () {
@@ -12,13 +33,21 @@ heartBtn.addEventListener("click", function () {
   }
 });
 
-// 상단으로
-const goToTop_btn = document.getElementById("goToTop_btn");
+// 중고 좋아요 버튼
+const heartButtons = document.querySelectorAll(".secondHand_card_top_hearts");
 
-goToTop_btn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+heartButtons.forEach((btn) => {
+  const heartImg = btn.querySelector(".secondHand_card_top_heart");
+
+  btn.addEventListener("click", function () {
+    if (heartImg.src.includes("empty-heart.svg")) {
+      heartImg.src = "/img/filled-heart.svg";
+      heartImg.style.filter =
+        "invert(8%) sepia(73%) saturate(6656%) hue-rotate(231deg) brightness(113%) contrast(92%)";
+    } else {
+      heartImg.src = "/img/empty-heart.svg";
+      heartImg.style.filter = "none";
+    }
   });
 });
 
@@ -50,5 +79,15 @@ followBtns.forEach((btn) => {
       text.style.color = "var(--mono-color1)";
       text.textContent = "팔로우";
     }
+  });
+});
+
+// 상단으로
+const goToTop_btn = document.getElementById("goToTop_btn");
+
+goToTop_btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });
