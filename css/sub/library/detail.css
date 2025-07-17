@@ -746,6 +746,24 @@ h1 > a {
   line-height: 27px;
 }
 
+.review_more {
+  width: fit-content;
+  height: fit-content;
+  font-size: var(--default-font-size);
+  color: var(--main-color);
+  background-color: var(--mono-color1);
+  padding: 10px 50px;
+  border: 1px solid var(--main-color);
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.review_more:hover {
+  color: var(--mono-color1);
+  background-color: var(--main-color);
+}
+
 /* 섹션: 추천 */
 .recommendation_wrap {
   width: 1300px;
