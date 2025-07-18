@@ -276,6 +276,7 @@ h1 > a {
 .sec_test_img {
   width: 320px;
   height: 370px;
+  overflow: hidden;
   margin-right: 200px;
 }
 
@@ -289,9 +290,13 @@ h1 > a {
 }
 
 .sec_test_text > h2 {
-  font-size: 28px;
+  font-size: clamp(14px, 5vw, 28px);
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.sec_test_text > h2 > br {
+  display: none;
 }
 
 .sec_test_text > span {
@@ -552,15 +557,19 @@ h1 > a {
 
 .sec_new_img {
   width: 1000px;
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
   position: relative;
+  background-color: blue;
 }
 
 .sec_new_img img {
   width: 100%;
-  position: absolute;
-  top: -10%;
+  height: auto;
+  display: block;
+  /* position: absolute; */
+  /* top: -10%; */
+  object-fit: cover;
   transition-duration: 0.3s;
 }
 

@@ -1,6 +1,10 @@
 @charset "uft-8";
 /* 모바일 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  section:not(.main_visual) {
+    margin: 0 auto 80px;
+  }
+
   .header_con {
     padding: 0 10px;
   }
@@ -23,6 +27,83 @@
 
   .main_visual_text > span:nth-child(2) {
     font-size: clamp(18px, 4vw, 24px);
+  }
+
+  /* 섹션: 테스트 */
+  .sec_test {
+    height: fit-content;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .sec_test_img {
+    width: 230px;
+    height: fit-content;
+    overflow: hidden;
+    margin: 0 auto 40px;
+  }
+
+  .sec_test_img > img {
+    width: 100%;
+  }
+
+  .sec_test_text {
+    text-align: center;
+  }
+
+  .sec_test_text > a {
+    margin-top: 25px;
+  }
+
+  /* 섹션: 인기 향수 */
+  .tab_menu_wrap {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: 0 auto 80px;
+  }
+
+  .tab_menu_wrap > a {
+    margin-bottom: 20px;
+  }
+
+  .sec_popular_wrapper {
+    width: 448px;
+  }
+
+  /* 섹션: 신상 향수 */
+  .new_wrap {
+    height: fit-content;
+    display: block;
+    padding: 50px;
+  }
+
+  .sec_new_img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sec_new_img > a {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sec_new_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .new_text > h2 {
+    margin-top: 30px;
+  }
+
+  .new_text > span {
+    margin-bottom: 0;
   }
 }
 

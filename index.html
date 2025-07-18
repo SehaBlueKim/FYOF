@@ -31,7 +31,6 @@
               <!-- 2차 메뉴 -->
               <div class="submenu_wrap">
                 <ul class="submenu_community">
-                  <!-- <li><a href="#">이벤트</a></li> -->
                   <li><a href="./sub/community/community.html">매거진</a></li>
                   <li><a href="#">리뷰</a></li>
                   <li><a href="#">질문</a></li>
@@ -92,7 +91,7 @@
           <img src="./img/test/test3.jpg" alt="취향 테스트" />
         </div>
         <div class="sec_test_text">
-          <h2>당신의 향기는 어떤 모습인가요?</h2>
+          <h2>당신의 향기는 <br />어떤 모습인가요?</h2>
           <span
             >몇가지 질문에 답하면 <br />
             당신과 닮은 향을 만나게 될 거예요.</span
@@ -855,6 +854,16 @@
       </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script>
+      if (window.innerWidth > 1440) {
+        const script = document.createElement("script");
+        script.src = "/js/index_pc.js";
+        document.body.appendChild(script);
+      } else if (window.innerWidth >= 320 && window.innerWidth <= 768) {
+        const script = document.createElement("script");
+        script.src = "/js/index_mobile.js";
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>
