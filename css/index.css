@@ -560,7 +560,6 @@ h1 > a {
   /* height: 600px; */
   overflow: hidden;
   position: relative;
-  background-color: blue;
 }
 
 .sec_new_img img {
@@ -690,6 +689,11 @@ h1 > a {
   height: 300px;
 }
 
+.sec_event_wrap {
+  width: 100%;
+  height: 100%;
+}
+
 .sec_event_img {
   width: 100%;
   height: 100%;
@@ -722,6 +726,10 @@ h1 > a {
 
 .sec_event_text > p {
   font-size: var(--title-font-size);
+}
+
+.sec_event_text > p > br {
+  display: none;
 }
 
 .sec_event_text > span > a {
@@ -787,8 +795,9 @@ h1 > a {
 
 .sec_news_right_card {
   width: 650px;
-  height: 200px;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -818,6 +827,7 @@ h1 > a {
 }
 
 .sec_news_right_card_text {
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }

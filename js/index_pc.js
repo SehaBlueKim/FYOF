@@ -1,3 +1,4 @@
+// 인기 향수 스와이퍼
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   slidesPerGroup: 5,
@@ -5,6 +6,19 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
   },
 });
 
