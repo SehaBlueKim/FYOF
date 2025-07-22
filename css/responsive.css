@@ -66,9 +66,16 @@
   }
 
   .tab_menu_wrap > a {
-    width: 80px;
-    font-size: 12px;
+    width: fit-content;
+    font-size: clamp(14px, 1rem, 16px);
     margin-bottom: 20px;
+    border: none;
+    text-decoration: underline;
+  }
+
+  .tab_menu_wrap > a:hover {
+    border: none;
+    color: var(--main-color);
   }
 
   .sec_popular {
