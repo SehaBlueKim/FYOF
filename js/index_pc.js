@@ -10,7 +10,12 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerGroup: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 4,
@@ -22,12 +27,31 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// 컬렉션 스와이퍼
 var collectionSwiper = new Swiper(".collectionSwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   centeredSlides: true,
   pagination: {
     clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
   },
 });
 

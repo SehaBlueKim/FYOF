@@ -22,7 +22,8 @@
   }
 
   .main_visual_text > p {
-    font-size: clamp(25px, 8vw, 60px);
+    font-size: clamp(42px, 10vw, 60px);
+    line-height: 1.1;
   }
 
   .main_visual_text > span:nth-child(2) {
@@ -61,20 +62,18 @@
   .tab_menu_wrap {
     width: fit-content;
     height: fit-content;
-    display: flex;
+    gap: 15px;
     margin: 0 auto 80px;
   }
 
   .tab_menu_wrap > a {
-    width: fit-content;
-    font-size: clamp(14px, 1rem, 16px);
-    margin-bottom: 20px;
-    border: none;
-    text-decoration: underline;
+    width: 20%;
+    height: 35px;
+    font-size: clamp(14px, 15px, 16px);
+    padding: 0px 5px;
   }
 
   .tab_menu_wrap > a:hover {
-    border: none;
     color: var(--main-color);
   }
 
@@ -82,11 +81,19 @@
     width: 100%;
   }
 
+  .sec_popular_wrapper .swiper-button-prev {
+    left: 10px;
+  }
+
+  .sec_popular_wrapper .swiper-button-next {
+    right: 10px;
+  }
+
   /* 섹션: 신상 향수 */
   .new_wrap {
     height: fit-content;
     display: block;
-    padding: 20px;
+    padding: 50px 20px;
   }
 
   .sec_new_img {
@@ -136,7 +143,6 @@
   }
 
   .sec_event_text {
-    font-size: 14px;
     display: flex;
     flex-direction: column;
   }
@@ -170,11 +176,23 @@
 
   .sec_news_left_img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    position: relative;
+  }
+
+  .sec_news_left_img > img {
+    position: absolute;
+    top: -30px;
+  }
+
+  .sec_news_left > p {
+    font-size: 19px;
+    line-height: 1.5;
   }
 
   /* 카드 오른쪽 */
   .sec_news_right {
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -187,8 +205,24 @@
     height: 200px;
   }
 
+  .sec_news_right_card_img1 {
+    top: -60px;
+  }
+
   .sec_news_right_card_text > div > span {
     display: block;
+  }
+
+  /* 섹션: 리뷰 */
+  .sec_review_wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec_review_card {
+    width: 300px;
   }
 }
 
