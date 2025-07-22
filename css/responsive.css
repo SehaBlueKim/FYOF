@@ -81,6 +81,50 @@
     width: 100%;
   }
 
+  .best_card_img1 img {
+    width: 80%;
+  }
+
+  .best_card_img2 img {
+    width: 90%;
+    top: -40px;
+  }
+
+  .best_card_img3 img {
+    width: 105%;
+  }
+
+  .best_card_img4 img {
+    width: 80%;
+  }
+
+  .best_card_img5 img {
+    width: 70%;
+  }
+
+  .best_card_img6 img {
+    width: 100%;
+  }
+
+  .best_card_img7 img {
+    width: 90%;
+  }
+
+  .best_card_img8 img {
+    width: 145%;
+    top: -60px;
+  }
+
+  .best_card_img9 img {
+    width: 160%;
+    top: -110px;
+  }
+
+  .best_card_img10 img {
+    width: 92%;
+    top: 30px;
+  }
+
   .sec_popular_wrapper .swiper-button-prev {
     left: 10px;
   }
@@ -145,6 +189,7 @@
   .sec_event_text {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .sec_event_text > p {
