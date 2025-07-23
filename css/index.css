@@ -351,8 +351,8 @@ h1 > a {
 
 /* 지금 뜨는 향수 */
 .swiper .swiper-slide {
-  width: auto;
-  height: auto;
+  width: 260px;
+  height: 467px;
   border: 1px solid transparent;
   padding: 0 15px;
   box-sizing: border-box;
@@ -408,6 +408,7 @@ h1 > a {
 .best_card_img > a {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .best_card_img img {
@@ -419,12 +420,13 @@ h1 > a {
 
 .best_card_img1 img,
 .best_card_img4 img {
-  top: -10px;
+  max-width: 100%;
+  bottom: 10px;
 }
 
 .best_card_img2 img {
   width: 110%;
-  top: -35px;
+  bottom: 10px;
 }
 
 .best_card_img3 img {
@@ -809,8 +811,8 @@ h1 > a {
   width: 650px;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .sec_news_left:hover .sec_news_left_img > img,
@@ -822,6 +824,7 @@ h1 > a {
   width: 300px;
   height: 200px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .sec_news_right_card_img > img {
@@ -840,8 +843,13 @@ h1 > a {
   top: -60px;
 }
 
+.sec_news_right_card_img3 {
+  height: 100%;
+  position: absolute;
+}
+
 .sec_news_right_card_text {
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }

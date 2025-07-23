@@ -5,6 +5,7 @@
     margin: 0 auto 80px;
   }
 
+  /* 헤더 */
   .header_con {
     padding: 0 10px;
   }
@@ -17,8 +18,13 @@
     display: block;
   }
 
+  /* 메인 비주얼 */
   .main_visual_text {
     top: 25%;
+  }
+
+  .main_visual_text > p > br {
+    display: block;
   }
 
   .main_visual_text > p {
@@ -87,7 +93,6 @@
 
   .best_card_img2 img {
     width: 90%;
-    top: -40px;
   }
 
   .best_card_img3 img {
@@ -243,6 +248,7 @@
 
   .sec_news_right_card {
     width: 100%;
+    flex-direction: column;
   }
 
   .sec_news_right_card_img {
@@ -268,6 +274,12 @@
 
   .sec_review_card {
     width: 300px;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
