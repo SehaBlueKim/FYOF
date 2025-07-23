@@ -183,7 +183,7 @@ h1 > a {
     hue-rotate(248deg) brightness(107%) contrast(110%);
 }
 
-/* 메인비주얼 */
+/* 섹션: 메인 비주얼 */
 .main_visual {
   width: 100%;
   height: 875px;
@@ -222,6 +222,10 @@ h1 > a {
   font-size: 96px;
   white-space: nowrap;
   margin-bottom: 30px;
+}
+
+.main_visual_text > p > br {
+  display: none;
 }
 
 .main_visual_text > span:nth-child(2) {
@@ -413,7 +417,8 @@ h1 > a {
   transform: translateX(-50%);
 }
 
-.best_card_img1 img {
+.best_card_img1 img,
+.best_card_img4 img {
   top: -10px;
 }
 
@@ -425,10 +430,6 @@ h1 > a {
 .best_card_img3 img {
   width: 130%;
   top: 10px;
-}
-
-.best_card_img4 img {
-  top: -10px;
 }
 
 .best_card_img5 img {
