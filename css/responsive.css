@@ -193,7 +193,7 @@
 
   .sec_news_left_img > img {
     position: absolute;
-    top: -80px;
+    top: -50px;
   }
 
   .sec_news_right {
@@ -243,6 +243,13 @@
 
 /* 태블릿 sm */
 @media screen and (min-width: 480px) and (max-width: 1024px) {
+  .main_visual_text > p > br {
+    display: block;
+  }
+
+  .sec_test {
+    gap: 20px;
+  }
 }
 
 /* 모바일&태블릿 */
