@@ -187,11 +187,13 @@
   .sec_news_left_img {
     width: 100%;
     height: auto;
+    position: relative;
     aspect-ratio: 3 / 2; /* 비율 유지 */
   }
 
   .sec_news_left_img > img {
-    transform: translateY(-10%);
+    position: absolute;
+    top: -80px;
   }
 
   .sec_news_right {
@@ -212,6 +214,11 @@
   .sec_news_right_card_img > img {
     width: 100%;
     height: auto;
+  }
+
+  .view_more {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   /* 섹션: 리뷰 */

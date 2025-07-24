@@ -351,7 +351,7 @@ h1 > a {
 
 /* 지금 뜨는 향수 */
 .swiper .swiper-slide {
-  width: 228px;
+  /* width: 228px; */
   height: 467px;
   border: 1px solid transparent;
   padding: 0 15px;
@@ -799,6 +799,11 @@ h1 > a {
 .sec_news_left > span:nth-child(3) {
   line-height: 1.5;
   color: var(--mono-color3);
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
   word-break: keep-all;
 }
 
@@ -880,6 +885,11 @@ h1 > a {
 .sec_news_right_card_text > div > span {
   color: var(--mono-color3);
   line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
   word-break: keep-all;
 }
 
