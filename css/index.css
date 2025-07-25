@@ -212,7 +212,7 @@ h1 > a {
   margin: 0 auto;
   position: absolute;
   left: 50%;
-  top: 33%;
+  top: 25%;
   transform: translate(-50%);
   color: var(--mono-color1);
   text-align: center;
@@ -537,13 +537,13 @@ h1 > a {
   color: var(--mono-color2);
 }
 
-.sec_popular_wrapper .swiper-button-prev {
+/* .sec_popular_wrapper .swiper-button-prev {
   left: -20px;
 }
 
 .sec_popular_wrapper .swiper-button-next {
   right: -20px;
-}
+} */
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
@@ -931,6 +931,9 @@ h1 > a {
   width: 100px;
   height: 100px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec_review_top_img > img {
@@ -945,7 +948,6 @@ h1 > a {
 .sec_review_top_img3 {
   position: absolute;
   transform: scale(0.4);
-  top: -55%;
 }
 
 .sec_review_top_text {

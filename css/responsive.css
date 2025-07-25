@@ -65,6 +65,10 @@
   }
 
   /* 섹션: 인기 향수 */
+  .sec_popular {
+    width: 100%;
+  }
+
   .tab_menu_wrap {
     width: fit-content;
     height: fit-content;
@@ -81,10 +85,6 @@
 
   .tab_menu_wrap > a:hover {
     color: var(--main-color);
-  }
-
-  .sec_popular {
-    width: 100%;
   }
 
   .sec_popular_wrapper .swiper-button-prev {
@@ -241,43 +241,164 @@
   }
 }
 
-/* 태블릿 sm */
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+/* medium: 768~1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
   .main_visual_text > p > br {
     display: block;
   }
 
-  .sec_test {
-    gap: 20px;
+  .sec_test_img {
+    margin-right: 30px;
+  }
+
+  .sec_popular {
+    width: 100%;
+  }
+
+  /* 섹션: 인기 향수 */
+  .tab_menu_wrap {
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
+    margin: 0 auto 80px;
+  }
+
+  .tab_menu_wrap > a {
+    width: 20%;
+    height: 35px;
+    font-size: clamp(14px, 15px, 16px);
+    padding: 0px 5px;
+  }
+
+  .tab_menu_wrap > a:hover {
+    color: var(--main-color);
+  }
+
+  .sec_popular_wrapper .swiper-button-prev {
+    left: 0px;
+  }
+
+  .sec_popular_wrapper .swiper-button-next {
+    right: 0px;
+  }
+
+  /* 섹션: 신상 향수 */
+  .new_wrap {
+    height: fit-content;
+    display: block;
+    padding: 50px;
+  }
+
+  .sec_new_img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .new_text h2 {
+    margin-top: 20px;
+  }
+
+  .sec_event_img {
+    background-position: 70% 38%;
+  }
+
+  /* 섹션: 뉴스 */
+  .sec_news_wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec_news_left {
+    width: 650px;
+  }
+
+  .sec_news_right_card {
+    height: 200px;
+  }
+
+  .view_more {
+    margin-top: auto;
+  }
+
+  .sec_review_wrap {
+    width: 100%;
+    gap: 30px;
+  }
+
+  /* 섹션: 리뷰 */
+  .sec_review_wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec_review_card {
+    width: 300px;
   }
 }
 
-/* 모바일&태블릿 */
-@media screen and (max-width: 640px) {
-  /* 헤더 */
-  .header_con {
-    padding: 0 10px;
+@media (min-width: 945px) and (max-width: 1024px) {
+  /* 섹션: 리뷰 */
+  .sec_review_wrap {
+    flex-direction: row;
+    gap: 30px;
   }
+}
 
-  #gnb {
-    display: none;
-  }
-
-  .icons > button:last-child {
+/* large: 1025~1439px */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .main_visual_text > p > br {
     display: block;
   }
+
+  /* 섹션: 인기 향수 */
+  .sec_popular {
+    width: 100%;
+  }
+
+  .tab_menu_wrap > a {
+    width: 100px;
+  }
+
+  /* 섹션: 신상 */
+  .new_wrap {
+    height: fit-content;
+  }
+
+  /* 섹션: 뉴스 */
+  .sec_news_wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec_news_left {
+    width: 650px;
+  }
+
+  .sec_news_right_card {
+    height: 200px;
+  }
+
+  .view_more {
+    margin-top: auto;
+  }
+
+  .sec_review_wrap {
+    width: 100%;
+    gap: 30px;
+  }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1250px) {
+/* extra large: 1440~1919px */
+@media (min-width: 1440px) and (max-width: 1919px) {
 }
 
-/* 태블릿 - md, lg */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-}
-
-/* 공통영역 */
-@media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 1600px) {
+/* full (기준 디자인 해상도): 1920px~ */
+@media (min-width: 1920px) {
 }
