@@ -1,0 +1,39 @@
+@charset "uft-8";
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* 헤더 */
+  .header_con {
+    padding: 0 10px;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons > button:last-child {
+    display: block;
+  }
+
+  .summary_container{
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 100px;
+    margin: 0 auto;
+  }
+
+  .summary_right_img{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .summary_right_img > img {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: -50px;
+  }
+
+
+}
