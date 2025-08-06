@@ -227,9 +227,11 @@ h1 > a {
 
 .star_point {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
+
 .star_point > img {
   width: 20px;
   height: 20px;

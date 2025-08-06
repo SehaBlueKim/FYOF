@@ -1,7 +1,7 @@
-@charset "uft-8";
+@charset "utf-8";
 /* 모바일 */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    /* 헤더 */
+  /* 헤더 */
   .header_con {
     padding: 0 10px;
   }
@@ -14,14 +14,14 @@
     display: block;
   }
 
-  .summary_container{
+  .summary_container {
     width: 90%;
     flex-direction: column-reverse;
     gap: 100px;
     margin: 0 auto;
   }
 
-  .summary_right_img{
+  .summary_right_img {
     width: 200px;
     height: 200px;
     top: 0px;
@@ -34,6 +34,14 @@
     top: -30px;
     left: -50px;
   }
+}
 
+@media screen and (min-width: 320px) and (max-width: 506px) {
+  .star_point > span:nth-of-type(2) {
+    display: inline-block;
+  }
 
+  .star_point > span:nth-of-type(3) {
+    display: block;
+  }
 }
