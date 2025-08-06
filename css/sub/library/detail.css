@@ -680,6 +680,10 @@ h1 > a {
   box-sizing: border-box;
 }
 
+.review_card > p {
+  word-break: keep-all;
+}
+
 .review_card > a {
   display: block;
   width: fit-content;

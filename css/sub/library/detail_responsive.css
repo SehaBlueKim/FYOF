@@ -19,6 +19,7 @@
     flex-direction: column-reverse;
     gap: 100px;
     margin: 0 auto;
+    padding: 30px;
   }
 
   .summary_right_img {
@@ -34,14 +35,186 @@
     top: -30px;
     left: -50px;
   }
-}
 
-@media screen and (min-width: 320px) and (max-width: 506px) {
-  .star_point > span:nth-of-type(2) {
-    display: inline-block;
+  .star_point {
+    gap: 10px;
   }
 
-  .star_point > span:nth-of-type(3) {
+  .each_star_point {
+    width: 15px;
+    height: 15px;
+  }
+
+  .summary_left > p {
+    word-break: keep-all;
+  }
+
+  .summary_left > p > br {
+    display: none;
+  }
+
+  .price {
+    flex-wrap: wrap;
+  }
+
+  .price > span:first-child {
+    margin-right: 10px;
+  }
+
+  /* 섹션: 디테일 */
+  .detail_wrap {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .detail_left {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .detail_right {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .note_chips_wrap {
+    flex-wrap: wrap;
+  }
+
+  .hashtag_wrap {
+    flex-wrap: wrap;
+  }
+
+  /* 섹션: 상세설명 */
+  .describe_wrap {
+    width: 90%;
+  }
+
+  .byredo_logo {
+    width: 150px;
+    margin-top: 100px;
+  }
+
+  .describe_title > h2 {
+    font-size: var(--body-font-size);
+  }
+
+  .describe_title > span {
+    font-size: var(--default-font-size);
+  }
+
+  .byredo_latulipe {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .byredo_latulipe > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .describe_img {
+    width: 90%;
+    height: auto;
+  }
+
+  .describe_text {
+    margin-top: 100px;
+  }
+
+  .describe_text > p {
+    font-size: var(--default-font-size);
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .describe_text > p > br:not(br:nth-child(3)) {
+    display: none;
+  }
+
+  /* 섹션: 리뷰 */
+  .review_wrap {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .review_star_point {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review_star_point button {
+    margin-left: 0;
+  }
+
+  .review_rate_wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .rate_bar {
+    width: 100px;
+  }
+
+  .review_card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .review_user {
     display: block;
+  }
+
+  .review_user_right {
+    margin-top: 10px;
+  }
+
+  .hashtag_wrap {
+    gap: 10px;
+  }
+
+  /* 섹션: 중고 */
+  .secondHand_wrap {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .secondHand_con {
+    flex-direction: column;
+  }
+
+  .secondHand_card {
+    width: 100%;
+  }
+
+  .secondHand_card_img1 > img {
+    top: -100px;
+  }
+
+  .secondHand_card_img2 > img {
+    top: -20px;
+  }
+
+  .secondHand_card_img3 > img {
+    top: -20px;
+  }
+
+  .secondHand_card_img4 > img {
+    top: -10px;
+  }
+
+  .secondHand_volume {
+    flex-wrap: wrap;
+  }
+
+  .secondHand_volume > p {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
