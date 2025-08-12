@@ -14,6 +14,7 @@
     display: block;
   }
 
+  /* 요약 */
   .summary_container {
     width: 90%;
     flex-direction: column-reverse;
@@ -141,7 +142,7 @@
   /* 섹션: 리뷰 */
   .review_wrap {
     width: 90%;
-    padding: 30px;
+    padding: 20px;
   }
 
   .review_star_point {
@@ -187,10 +188,12 @@
 
   .secondHand_con {
     flex-direction: column;
+    align-items: center;
   }
 
   .secondHand_card {
     width: 100%;
+    max-width: 270px;
   }
 
   .secondHand_card_img1 > img {
@@ -215,6 +218,53 @@
 
   .secondHand_volume > p {
     margin-left: 0;
-    margin-top: 10px;
+  }
+
+  .recommendation_wrap {
+    width: 90%;
+  }
+
+  .recommendation_box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user_rcmd_wrap {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .user_rcmd_box {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .user_card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .like_wrap {
+    justify-content: center;
+  }
+
+  .user_card_match {
+    width: 90%;
+  }
+
+  .user_card_match > .match_rate_bar {
+    width: 100%;
+  }
+
+  .followBtn + p {
+    height: fit-content;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
   }
 }
