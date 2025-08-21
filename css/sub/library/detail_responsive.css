@@ -145,6 +145,10 @@
     padding: 20px;
   }
 
+  .review_rate_wrap {
+    flex-wrap: wrap;
+  }
+
   .review_star_point {
     flex-direction: column;
     align-items: flex-start;
@@ -154,9 +158,11 @@
     margin-left: 0;
   }
 
-  .review_rate_wrap {
-    flex-direction: column;
-    gap: 20px;
+  .hashtag_wrap + p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
   }
 
   .rate_bar {
@@ -187,8 +193,8 @@
   }
 
   .secondHand_con {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .secondHand_card {
@@ -220,6 +226,10 @@
     margin-left: 0;
   }
 
+  .secondHand_volume span {
+    margin-right: 8px;
+  }
+
   .recommendation_wrap {
     width: 90%;
   }
@@ -247,6 +257,7 @@
 
   .like_wrap {
     justify-content: center;
+    gap: 10px;
   }
 
   .user_card_match {
@@ -266,5 +277,86 @@
     flex-direction: column;
     gap: 10px;
     padding: 0 20px;
+  }
+}
+
+/* medium: 768~1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 요약 */
+  .summary_container {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .detail_wrap {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .detail_left {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .detail_right {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .describe_wrap {
+    width: 90%;
+  }
+
+  .describe_img {
+    width: 90%;
+    height: auto;
+  }
+
+  .review_wrap {
+    width: 90%;
+  }
+
+  .review_rate_wrap {
+    flex-wrap: wrap;
+  }
+
+  .review_card {
+    width: 100%;
+  }
+
+  .secondHand_wrap {
+    width: 90%;
+  }
+
+  .secondHand_con {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recommendation_wrap {
+    width: 90%;
+  }
+
+  .recommendation_box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user_rcmd_wrap {
+    width: 90%;
+    display: flex;
+  }
+
+  .user_rcmd_box {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 }
