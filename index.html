@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FYOF-당신만의 향기를 찾아보세요</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/responsive.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
@@ -39,7 +39,7 @@
               </div>
             </li>
             <li>
-              <a href="#">탐색</a>
+              <a href="./sub/discover/discover.html">탐색</a>
               <!-- 2차 메뉴 -->
               <div class="submenu_wrap">
                 <ul class="submenu_search">
@@ -49,7 +49,7 @@
               </div>
             </li>
             <li>
-              <a href="#">쇼핑</a>
+              <a href="./sub/shopping/shopping.html">쇼핑</a>
             </li>
           </ul>
         </nav>
@@ -854,17 +854,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      if (window.innerWidth > 1440) {
-        const script = document.createElement("script");
-        script.src = "/js/index_pc.js";
-        document.body.appendChild(script);
-      } else if (window.innerWidth >= 320 && window.innerWidth <= 768) {
-        const script = document.createElement("script");
-        script.src = "/js/index_mobile.js";
-        document.body.appendChild(script);
-      }
-    </script>
+    <script src="./js/index_pc.js"></script>
   </body>
 </html>

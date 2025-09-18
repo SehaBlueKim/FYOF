@@ -1,0 +1,551 @@
+@charset "utf-8";
+@import url(../../reset.css);
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  font-family: "DM Serif Text", "Noto Sans KR";
+  font-size: var(--default-font-size);
+  color: var(--mono-color4);
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  height: 75px;
+  position: relative;
+  border: 1px solid var(--mono-color2);
+  box-sizing: border-box;
+  z-index: 999;
+  background-color: var(--mono-color5);
+}
+
+header:hover {
+  background-color: var(--mono-color5);
+  transition-duration: 1.2s;
+}
+
+header:hover #gnb > ul > li > a {
+  font-weight: 500;
+  color: var(--mono-color4);
+}
+
+header:hover #gnb > ul > li > a:hover {
+  color: var(--main-color);
+}
+
+header:hover .header_con > h1:not(:hover) {
+  filter: invert(0);
+}
+
+header:hover .header_con > .icons > button {
+  filter: invert(0);
+}
+
+.header_con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+  box-sizing: border-box;
+}
+
+.header_con > h1:hover {
+  filter: brightness(0) saturate(100%) invert(7%) sepia(65%) saturate(7248%)
+    hue-rotate(248deg) brightness(107%) contrast(110%);
+}
+
+/* 로고 */
+h1 {
+  width: 93px;
+  height: 20px;
+  background: url(../../../img/logo.svg) no-repeat;
+}
+
+h1 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+}
+
+/* gnb */
+#gnb {
+  width: 479px;
+  height: 75px;
+}
+
+#gnb > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gnb > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#gnb > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: var(--mono-color4);
+  padding: 0 20px;
+}
+
+#gnb > ul > li > a:hover {
+  color: var(--main-color);
+}
+
+#gnb > ul > li:nth-child(2):hover .submenu_wrap,
+#gnb > ul > li:nth-child(3):hover .submenu_wrap {
+  display: block;
+}
+
+/* 2차 메뉴 공통 속성 */
+.submenu_wrap {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: var(--mono-color1);
+  display: flex;
+  align-items: center;
+
+  display: none;
+}
+
+/* 커뮤니티 2차 메뉴 */
+.submenu_wrap > ul > li > a:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.submenu_community,
+.submenu_search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--mono-color5);
+  border-bottom: 1px solid var(--mono-color2);
+}
+
+/* 아이콘 */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons > button {
+  border: none;
+  background-color: transparent;
+}
+
+.icons > button:last-child {
+  display: none;
+}
+
+.icons > button:hover {
+  cursor: pointer;
+}
+
+.icons > button:hover img {
+  filter: brightness(0) saturate(100%) invert(7%) sepia(65%) saturate(7248%)
+    hue-rotate(248deg) brightness(107%) contrast(110%);
+}
+
+/* 메인 슬라이드 */
+.main_img,
+.swiper,
+.swiper-wrapper {
+  width: 100%;
+  height: 450px;
+}
+
+.mySwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main_left {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.slide1 .main_left {
+  background-color: #dbedfb;
+}
+
+.slide2 .main_left {
+  background-color: #fffbf3;
+}
+
+.main_left p:nth-child(1) {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.main_left p:nth-child(2) {
+  font-size: var(--default-font-size);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.main_left span {
+  font-size: var(--body-font-size);
+}
+
+.main_right {
+  width: calc(100% - 450px);
+  height: 100%;
+  overflow: hidden;
+}
+
+.main_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 지금 뜨는 향수 */
+section {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto 130px;
+  box-sizing: border-box;
+}
+
+.sec_img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.sec_popular_img {
+  background-image: url(../../../img/shopping/shopping\ best.jpg);
+}
+
+.sec_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 46, 46, 0.5);
+  z-index: 1;
+}
+
+.sec_text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  color: var(--mono-color1);
+  z-index: 2;
+}
+
+.sec_text p:nth-child(1) {
+  font-size: var(--body-font-size);
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.sec_text p:nth-child(2) {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sec_text p:nth-child(3) {
+  font-size: var(--body-font-size);
+  font-weight: 500;
+}
+
+/* 지금 뜨는 향수 카드 */
+.sec_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 45px;
+}
+
+.each_card {
+  width: calc((1300px - 135px) / 4);
+  height: 467px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.each_card_img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.each_card_img > a > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.each_card_img > a > p {
+  width: 90%;
+  font-size: 14px;
+  color: var(--mono-color1);
+  line-height: 25px;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  word-break: keep-all;
+
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.each_card_img:hover > a > div,
+.each_card_img:hover > a > p {
+  opacity: 1;
+}
+
+.each_card_img > a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.each_card_img img {
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.best_card_img1 img {
+  width: 210px;
+  bottom: 10px;
+}
+
+.best_card_img2 img {
+  width: 250px;
+  bottom: 5px;
+}
+
+.best_card_img3 img {
+  width: 300px;
+  bottom: 0;
+}
+
+.best_card_img4 img {
+  max-width: 228px;
+  bottom: 10px;
+}
+
+.each_card_star {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 5px;
+}
+
+.star {
+  width: 11px;
+  height: 11px;
+  margin: 0 2px;
+}
+
+.each_card_star > span {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(50%) saturate(3849%)
+    hue-rotate(226deg) brightness(84%) contrast(97%);
+}
+
+.each_card_name {
+  line-height: 1.5;
+  padding: 15px 10px;
+  border-top: 1px solid var(--mono-color2);
+  border-bottom: 1px solid var(--mono-color2);
+  margin: 8px 0;
+}
+
+.each_card_name > span:nth-child(1) {
+  display: block;
+  height: 46px;
+  word-break: keep-all;
+}
+
+.each_card_name > span:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* 카카오톡 쿠폰 */
+.sec_kakaotalk_coupon {
+  width: 100%;
+  height: 300px;
+  background-color: #fffde6;
+}
+
+.kakaotalk_coupon {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.kakaotalk_coupon_left {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.kakaotalk_coupon_left p {
+  line-height: 38px;
+  font-size: 32px;
+}
+
+.kakaotalk_coupon_left p strong {
+  font-weight: bold;
+}
+
+.kakaotalk_coupon_right {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kakaotalk_coupon_right img {
+  width: 100%;
+  height: auto;
+}
+
+/* 신상 향기 모음 */
+.sec_new_img {
+  background-image: url(../../../img/shopping/shopping\ new.jpg);
+}
+
+.new_card_img1 img {
+  width: 203px;
+  bottom: 10px;
+}
+
+.new_card_img2 img {
+  width: 210px;
+  bottom: 10px;
+}
+
+.new_card_img3 img {
+  width: 188px;
+  bottom: 10px;
+}
+
+.new_card_img4 img {
+  width: 350px;
+  bottom: -10px;
+}
+
+/* 브랜드 아쿠아 디 파르마 */
+.sec_brand_img {
+  background-image: url(../../../img/shopping/shopping-acqua-di-parma.png);
+}
+
+.brand_card_img1 img {
+  width: 173px;
+  bottom: 10px;
+}
+
+.brand_card_img2 img {
+  width: 195px;
+  bottom: 10px;
+}
+
+.brand_card_img3 img {
+  width: 195px;
+  bottom: 10px;
+}
+
+.brand_card_img4 img {
+  width: 195px;
+  bottom: 10px;
+}
+
+/* 샘플 향수 */
+.sec_sample_img {
+  background-image: url(../../../img/shopping/shopping\ sample.jpg);
+}
+
+.sample_card_img1 img {
+  width: 400px;
+  bottom: 0px;
+}
+
+.sample_card_img2 img {
+  width: 270px;
+  bottom: -10px;
+}
+
+.sample_card_img3 img {
+  width: 240px;
+  bottom: -20px;
+}
+
+.sample_card_img4 img {
+  width: 300px;
+  bottom: -60px;
+}

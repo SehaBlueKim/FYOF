@@ -297,12 +297,7 @@
     gap: 50px;
   }
 
-  .detail_left {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
-
+  .detail_left,
   .detail_right {
     width: 90%;
     height: auto;
