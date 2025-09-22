@@ -165,7 +165,7 @@ h1 > a {
 }
 
 .icons > button:last-child {
-  display: none;
+  display: none; /* 모바일 전용 햄버거 메뉴 숨김 */
 }
 
 .icons > button {
@@ -659,6 +659,11 @@ h1 > a {
   color: var(--mono-color3);
   margin: 15px 0;
   word-break: keep-all;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 
 .sec_collection_card_user {
@@ -694,13 +699,6 @@ h1 > a {
     contrast(87%);
   margin-left: auto;
   margin-right: 5px;
-}
-
-.sec_collection .swiper-wrapper div:nth-child(5) span {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
 }
 
 /* 섹션: 이벤트 배너 */

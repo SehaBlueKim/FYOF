@@ -113,7 +113,7 @@ h1 > a {
   width: 100%;
   height: 50px;
   position: absolute;
-  top: 75px;
+  top: 74px;
   left: 0;
   background-color: var(--mono-color1);
   display: flex;
@@ -548,4 +548,233 @@ section {
 .sample_card_img4 img {
   width: 300px;
   bottom: -60px;
+}
+
+/* 중고 향수 */
+.sec_secondhand_img {
+  background-image: url(../../../img/shopping/shopping\ secondhand.png);
+  background-size: cover;
+}
+
+.secondHand_wrap {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto;
+
+  background-color: var(--mono-color5);
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.secondHand_con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.secondHand_card {
+  width: 270px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--mono-color2);
+  border-radius: 14px;
+}
+
+.secondHand_wrap > h2 {
+  font-size: var(--body-font-size);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.secondHand_card_top > div {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  position: relative;
+}
+
+.secondHand_card_top > div {
+  position: relative;
+}
+
+.secondHand_card_top > div > img {
+  width: 100%;
+}
+
+.secondHand_card_img1 > img {
+  position: absolute;
+  top: -150px;
+}
+
+.secondHand_card_img2 > img {
+  position: absolute;
+  top: -50px;
+}
+
+.secondHand_card_img3 > img {
+  position: absolute;
+  top: -60px;
+}
+
+.secondHand_card_img4 > img {
+  position: absolute;
+  top: -30px;
+}
+
+.secondHand_card_top_hearts {
+  width: 40px;
+  height: 40px;
+  background-color: var(--mono-color1);
+  border-radius: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondHand_card_top_heart {
+  width: 24px;
+  height: 24px;
+}
+
+.secondHand_card_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+}
+
+.secondHand_card_bottom > div:first-child > p {
+  font-size: var(--body-font-size);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.secondHand_volume {
+  display: flex;
+  align-items: center;
+}
+
+.secondHand_img2 {
+  margin-right: 5px;
+}
+
+.secondHand_volume > p {
+  font-size: 14px;
+  color: var(--mono-color5);
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 14px;
+  margin-left: auto;
+}
+
+.secondHand_card_bottom > span {
+  font-size: var(--body-font-size);
+  color: var(--main-color);
+}
+
+.secondHand_seller {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secondHand_seller_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.secondHand_seller_img > img {
+  width: 100%;
+}
+
+.secondHand_seller_img2 > img {
+  position: absolute;
+  top: -8px;
+}
+
+.secondHand_seller_img3 > img,
+.secondHand_seller_img4 > img {
+  height: 100%;
+}
+
+.secondHand_shopping_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--main-color);
+  padding: 5px 0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.secondHand_shopping_cart > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(7%)
+    hue-rotate(111deg) brightness(103%) contrast(96%);
+}
+
+.secondHand_shopping_cart > span {
+  color: var(--mono-color1);
+}
+
+/* goToTop 버튼 */
+#goToTop_btn {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid var(--mono-color2);
+  border-radius: 100px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+}
+
+#goToTop_btn::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../../../img/goToTop.svg) no-repeat center;
+  cursor: pointer;
+}
+
+/* 풋터 */
+footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid var(--mono-color2);
+  display: flex;
+  align-items: center;
+}
+
+.footer_wrap {
+  width: 1300px;
+  height: 40px;
+  font-size: 13px;
+  color: var(--mono-color3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.footer_wrap > div {
+  display: flex;
+  gap: 34px;
 }
