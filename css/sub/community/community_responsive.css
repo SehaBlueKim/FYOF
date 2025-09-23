@@ -1,0 +1,113 @@
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  section {
+    margin: 0 auto 80px;
+  }
+
+  /* 헤더 */
+  .header_con {
+    padding: 0 10px;
+  }
+
+  #gnb {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: var(--mono-color1);
+
+    display: none;
+  }
+
+  #gnb.active {
+    display: block; /* menu-line 클릭 시 나타나기 */
+  }
+
+  .icons > button:last-child {
+    display: block;
+  }
+
+  /* 배너 */
+  .main_image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_image > img {
+    width: 100%;
+    position: static;
+  }
+
+  /* 탭 메뉴 */
+  .tab_menu_wrap {
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
+    margin: 0 auto 80px;
+  }
+
+  .tab_menu_wrap > button {
+    width: 75px;
+    height: 35px;
+    font-size: clamp(14px, 15px, 16px);
+  }
+
+  /* 첫번째 카드 */
+  .card_first_wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .card_first_img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card_first_img > img {
+    width: 100%;
+    position: static;
+  }
+
+  .card_first_text {
+    width: 100%;
+  }
+
+  .card_first_text h3 {
+    font-size: var(--body-font-size);
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  /* 나머지 카드 */
+  .card_wrap {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .card_text h3 {
+    word-break: keep-all;
+  }
+}
