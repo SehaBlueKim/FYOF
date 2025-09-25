@@ -24,6 +24,10 @@
     display: block; /* menu-line 클릭 시 나타나기 */
   }
 
+  #gnb > ul {
+    justify-content: center;
+  }
+
   .icons > button:last-child {
     display: block;
   }
@@ -109,5 +113,153 @@
 
   .card_text h3 {
     word-break: keep-all;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* medium: 768~1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 배너 */
+  .main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_image > img {
+    width: 100%;
+    position: static;
+  }
+
+  /* 탭 메뉴 */
+  .tab_menu_wrap {
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
+    margin: 0 auto 80px;
+  }
+
+  .tab_menu_wrap > button {
+    width: 75px;
+    height: 35px;
+    font-size: clamp(14px, 15px, 16px);
+  }
+
+  /* 첫번째 카드 */
+  .card_first_wrap {
+    width: 90%;
+  }
+
+  .card_first_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 카드 나머지 */
+  .card_wrap {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 0 auto 50px;
+  }
+
+  .card_wrap > a {
+    width: 30%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .card_img1 > img {
+    position: absolute;
+    top: -70px;
+  }
+
+  .card_img2 > img {
+    position: absolute;
+    top: -40px;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* large: 1025~1439px */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* 탭 메뉴 */
+  .tab_menu_wrap {
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
+    margin: 0 auto 80px;
+  }
+
+  .tab_menu_wrap > button {
+    width: 75px;
+    height: 35px;
+    font-size: clamp(14px, 15px, 16px);
+  }
+
+  /* 첫번째 카드 */
+  .card_first_wrap {
+    width: 90%;
+  }
+
+  .card_first_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 카드 나머지 */
+  .card_wrap {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 0 auto 50px;
+  }
+
+  .card_wrap > a {
+    width: 30%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .card_img1 > img {
+    position: absolute;
+    top: -70px;
+  }
+
+  .card_img2 > img {
+    position: absolute;
+    top: -40px;
   }
 }

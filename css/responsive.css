@@ -25,6 +25,10 @@
     display: block; /* menu-line 클릭 시 나타나기 */
   }
 
+  #gnb > ul {
+    justify-content: center;
+  }
+
   .icons > button:last-child {
     display: block;
   }
