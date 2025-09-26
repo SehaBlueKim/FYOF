@@ -8,10 +8,6 @@ body {
   color: var(--mono-color4);
 }
 
-section {
-  margin-bottom: 100px;
-}
-
 /* 헤더 */
 header {
   width: 100%;
@@ -175,6 +171,7 @@ h1 > a {
   background-image: url(../../../img/main_visual_bg.jpg);
   position: relative;
   color: var(--mono-color1);
+  margin-bottom: 100px;
 }
 
 .main_image::after {
@@ -210,22 +207,23 @@ h1 > a {
 }
 
 .main_image p {
-  font-size: var(--body-font-size);
+  font-size: clamp(1rem, 2vw, 20px);
 }
 
 /* beginning 섹션 */
 .section {
-  width: 1300px;
+  width: 100%;
   height: 450px;
   margin: 0 auto 100px;
 }
 
 .section > div {
-  width: 100%;
+  width: 1300px;
   height: 100%;
   display: flex;
   align-items: center;
   gap: 50px;
+  margin: 0 auto 100px;
 }
 
 .sec_text {
@@ -260,11 +258,97 @@ h1 > a {
   width: 100%;
 }
 
-.sec_beginning_img > img {
-  transform: rotate(-90deg);
+.sec_img_beginning > img {
+  width: auto;
+  height: 100%;
 }
 
 /* mission 섹션 */
 .sec_mission > div {
   flex-direction: row-reverse;
+}
+
+/* Our Values 섹션 */
+.section_values {
+  width: 100%;
+}
+
+.sec_values {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin: 0 auto 100px;
+}
+
+.sec_values > h3 {
+  font-size: 30px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.sec_values_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.sec_values_each {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.sec_values_each > span {
+  font-size: var(--title-font-size);
+}
+
+.sec_values_each > p {
+  line-height: 25px;
+  text-align: center;
+}
+
+.sec_values_icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--mono-color4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.sec_values_icon > img {
+  width: 100%;
+  filter: invert(100%);
+}
+
+/* 풋터 */
+footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid var(--mono-color2);
+  display: flex;
+  align-items: center;
+}
+
+.footer_wrap {
+  width: 1300px;
+  height: 40px;
+  font-size: 13px;
+  color: var(--mono-color3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.footer_wrap > div {
+  display: flex;
+  gap: 34px;
 }

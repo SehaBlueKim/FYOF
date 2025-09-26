@@ -1,0 +1,161 @@
+@charset "uft-8";
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* 헤더 */
+  .header_con {
+    padding: 0 10px;
+  }
+
+  #gnb {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: var(--mono-color1);
+
+    display: none;
+  }
+
+  #gnb.active {
+    display: block; /* menu-line 클릭 시 나타나기 */
+  }
+
+  #gnb > ul {
+    justify-content: center;
+  }
+
+  .icons > button:last-child {
+    display: block;
+  }
+
+  /* 메인 이미지 */
+  .main_image {
+    height: 600px;
+  }
+
+  .main_image p {
+    padding: 0 20px 0 20px;
+  }
+
+  .main_text_pc {
+    display: none;
+  }
+
+  /* 섹션 */
+  .section {
+    height: auto;
+  }
+
+  .section > div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sec_text {
+    width: 90%;
+  }
+
+  .sec_img {
+    width: 90%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .sec_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Our Values*/
+  .sec_values {
+    width: 100%;
+  }
+
+  .sec_values_wrapper {
+    flex-direction: column;
+  }
+
+  .sec_values_each {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* medium: 768~1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 섹션 */
+  .section {
+    height: auto;
+  }
+
+  .section > div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sec_text {
+    width: 90%;
+  }
+
+  .sec_img {
+    width: 90%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .sec_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Our Values*/
+  .sec_values {
+    width: 100%;
+  }
+
+  .sec_values_wrapper {
+    flex-direction: column;
+  }
+
+  .sec_values_each {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* large: 1025~1439px */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* 섹션 */
+  .section > div {
+    width: 90%;
+  }
+
+  .sec_values {
+    width: 100%;
+  }
+
+  /* Our Values*/
+  .sec_values_wrapper {
+    justify-content: space-evenly;
+  }
+
+  .sec_values_each {
+    width: fit-content;
+  }
+}
