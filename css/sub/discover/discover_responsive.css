@@ -83,15 +83,18 @@
     justify-content: center;
   }
 
-  .best_card_img > a > p {
-    font-size: clamp(12px, 2vw, 14px);
-  }
-
-  .best_card_star span {
-    font-size: clamp(12px, 2vw, 14px);
-  }
-
+  .best_card_img > a > p,
+  .best_card_star span,
   .best_card_name {
     font-size: clamp(12px, 2vw, 14px);
+  }
+
+  .best_card_star {
+    padding: 0;
+  }
+
+  .best_card_star img:last-child {
+    width: 12px;
+    height: 12px;
   }
 }
