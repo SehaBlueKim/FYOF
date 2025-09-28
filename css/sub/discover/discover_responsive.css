@@ -64,6 +64,21 @@
     margin: 0 auto 50px;
   }
 
+  .discover_left_title > h2 {
+    font-size: clamp(var(--body-font-size), 3vw, var(--title-font-size));
+  }
+
+  .discover_left_option_name {
+    margin-top: 10px;
+  }
+
+  .discover_left_option_name > div:first-child {
+    font-weight: 400;
+  }
+  .divider {
+    margin-top: 10px;
+  }
+
   /* 우측(하측) 향수 */
   .discover_right {
     width: 90%;
