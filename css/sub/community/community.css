@@ -185,11 +185,16 @@ h1 > a {
 .main_image {
   width: 100%;
   height: 450px;
+}
+
+.main_image > div {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.main_image > img {
+.main_image > div > img {
   position: absolute;
   top: -280px;
 }

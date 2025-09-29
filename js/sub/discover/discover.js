@@ -91,3 +91,13 @@ if (window.matchMedia("(min-width: 320px) and (max-width: 768px)").matches) {
     });
   });
 }
+
+// go to top 버튼
+const goToTop_btn = document.getElementById("goToTop_btn");
+
+goToTop_btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

@@ -330,6 +330,10 @@
     width: 650px;
   }
 
+  .sec_news_left_img {
+    width: 100%;
+  }
+
   .sec_news_right_card {
     height: 200px;
   }
@@ -347,20 +351,16 @@
   .sec_review_wrap {
     width: 100%;
     height: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+  }
+
+  .sec_review_top {
+    flex-direction: column;
   }
 
   .sec_review_card {
     width: 300px;
-  }
-}
-
-@media (min-width: 945px) and (max-width: 1024px) {
-  /* 섹션: 리뷰 */
-  .sec_review_wrap {
-    flex-direction: row;
-    gap: 30px;
   }
 }
 
@@ -394,6 +394,10 @@
 
   .sec_news_left {
     width: 650px;
+  }
+
+  .sec_news_left_img {
+    width: 100%;
   }
 
   .sec_news_right_card {

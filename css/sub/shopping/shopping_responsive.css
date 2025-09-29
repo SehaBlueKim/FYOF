@@ -1,0 +1,94 @@
+@charset "uft-8";
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* 헤더 */
+  .header_con {
+    padding: 0 10px;
+  }
+
+  #gnb {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: var(--mono-color1);
+
+    display: none;
+  }
+
+  #gnb.active {
+    display: block; /* menu-line 클릭 시 나타나기 */
+  }
+
+  #gnb > ul {
+    justify-content: center;
+  }
+
+  .icons > button:last-child {
+    display: block;
+  }
+
+  /* 메인 이미지 */
+  .swiper-slide {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .main_left,
+  .main_right {
+    width: 100%;
+  }
+
+  .main_left {
+    height: fit-content;
+  }
+
+  /* 배너 및 향수들 */
+  section {
+    width: 90%;
+    margin: 0 auto 80px;
+  }
+
+  .sec_wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .each_card {
+    width: calc((100% - 20px) / 2);
+    height: auto;
+  }
+
+  /* 카카오톡 쿠폰 */
+  .sec_kakaotalk_coupon {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .kakaotalk_coupon {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .kakaotalk_coupon_left > p {
+    font-size: clamp(var(--body-font-size), 3vw, var(--title-font-size));
+  }
+
+  .kakaotalk_coupon_right {
+    width: 80%;
+  }
+
+  /* 중고 향수 */
+  .secondHand_con {
+    flex-wrap: wrap;
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}

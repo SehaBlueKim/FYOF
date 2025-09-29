@@ -182,19 +182,19 @@ h1 > a {
 }
 
 /* 메인 이미지 */
-.main_img {
+.main_image {
   width: 100%;
   height: 450px;
 }
 
-.main_img > div {
+.main_image > div {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.main_img > div > img {
+.main_image > div > img {
   position: absolute;
   top: -470px;
 }
@@ -510,6 +510,8 @@ h1 > a {
 
 .best_card_img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .best_card_img10 img {
@@ -603,6 +605,28 @@ h1 > a {
 .pagination_wrap > div:last-child > img {
   width: 90%;
   filter: invert(1);
+}
+
+/* goToTop 버튼 */
+#goToTop_btn {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid var(--mono-color2);
+  border-radius: 100px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+}
+
+#goToTop_btn::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../../../img/goToTop.svg) no-repeat center;
+  cursor: pointer;
 }
 
 /* 풋터 */
