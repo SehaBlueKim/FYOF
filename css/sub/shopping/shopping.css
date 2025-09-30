@@ -189,6 +189,10 @@ h1 > a {
   box-sizing: border-box;
 }
 
+.main_left > p {
+  word-break: keep-all;
+}
+
 .slide1 .main_left {
   background-color: #dbedfb;
 }
@@ -277,6 +281,7 @@ section {
 .sec_text p:nth-child(2) {
   font-size: 32px;
   margin-bottom: 20px;
+  word-break: keep-all;
 }
 
 .sec_text p:nth-child(3) {
@@ -476,18 +481,6 @@ section {
   background-size: cover;
 }
 
-.secondHand_wrap {
-  width: 1300px;
-  height: auto;
-  margin: 0 auto;
-
-  background-color: var(--mono-color5);
-  border: 1px solid var(--mono-color2);
-  border-radius: 14px;
-  padding: 50px;
-  box-sizing: border-box;
-}
-
 .secondHand_con {
   width: 100%;
   height: auto;
@@ -497,46 +490,43 @@ section {
   margin: 0 auto;
 }
 
+.secondHand_card_top {
+  position: relative;
+}
+
 .secondHand_card {
   width: 270px;
   height: fit-content;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--mono-color2);
+  box-sizing: border-box;
   border-radius: 14px;
 }
 
-.secondHand_wrap > h2 {
-  font-size: var(--body-font-size);
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.secondHand_card_top > div {
+.secondHand_card_img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: 14px 14px 0 0;
-  position: relative;
-}
 
-.secondHand_card_top > div {
-  position: relative;
-}
-
-.secondHand_card_top > div > img {
-  width: 100%;
-}
-
-.secondHand_card_img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.secondHand_card_img > img {
+  width: 100%;
+}
+
+.secondHand_card_img1 {
+  position: relative;
+}
+
 .secondHand_card_img1 > img {
   position: absolute;
-  top: -150px;
+  bottom: -30px;
 }
 
 .secondHand_card_top_hearts {

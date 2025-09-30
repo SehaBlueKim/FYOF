@@ -83,6 +83,7 @@
   /* 중고 향수 */
   .secondHand_con {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* 풋터 */
@@ -90,5 +91,63 @@
     flex-direction: column;
     gap: 10px;
     padding: 0 20px;
+  }
+}
+
+/* medium: 769~1299px */
+@media (min-width: 769px) and (max-width: 1299px) {
+  section {
+    width: 90%;
+    margin: 0 auto 100px;
+  }
+
+  .sec_wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* 메인 이미지 */
+  .main_left {
+    width: fit-content;
+  }
+
+  .main_right {
+    width: 100%;
+  }
+
+  .each_card {
+    width: calc((100% - 20px) / 2);
+    height: auto;
+  }
+
+  /* 카카오톡 쿠폰 */
+  .kakaotalk_coupon {
+    gap: 30px;
+  }
+
+  .kakaotalk_coupon_left > p {
+    font-size: clamp(var(--body-font-size), 2.5vw, 32px);
+  }
+
+  .secondHand_con {
+    flex-wrap: wrap;
+  }
+
+  .secondHand_card {
+    width: calc((100% - 40px) / 2);
+  }
+
+  /* 풋터 */
+  .footer_wrap > div {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* large: 1025~1439px */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  section {
+    width: 90%;
   }
 }
